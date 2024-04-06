@@ -1,0 +1,841 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Task-Manager-Beta.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Task-Manager-Beta.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Boss-Footer.png",
+      "PackagePath": "staticwebassets\\Graphics\\Boss-Footer.png"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Boss-Footer.svg",
+      "PackagePath": "staticwebassets\\Graphics\\Boss-Footer.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Hexagon.svg",
+      "PackagePath": "staticwebassets\\Graphics\\Hexagon.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\add-circle.svg",
+      "PackagePath": "staticwebassets\\Graphics\\add-circle.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\center.svg",
+      "PackagePath": "staticwebassets\\Graphics\\center.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\delete.svg",
+      "PackagePath": "staticwebassets\\Graphics\\delete.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\details.svg",
+      "PackagePath": "staticwebassets\\Graphics\\details.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\discord.svg",
+      "PackagePath": "staticwebassets\\Graphics\\discord.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\edit.svg",
+      "PackagePath": "staticwebassets\\Graphics\\edit.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\footer-left.svg",
+      "PackagePath": "staticwebassets\\Graphics\\footer-left.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\footerleft.svg",
+      "PackagePath": "staticwebassets\\Graphics\\footerleft.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\instagram.svg",
+      "PackagePath": "staticwebassets\\Graphics\\instagram.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\logo-home.svg",
+      "PackagePath": "staticwebassets\\Graphics\\logo-home.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\logo.svg",
+      "PackagePath": "staticwebassets\\Graphics\\logo.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\notification.svg",
+      "PackagePath": "staticwebassets\\Graphics\\notification.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\search.svg",
+      "PackagePath": "staticwebassets\\Graphics\\search.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\setting.svg",
+      "PackagePath": "staticwebassets\\Graphics\\setting.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\x.svg",
+      "PackagePath": "staticwebassets\\Graphics\\x.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\0dc82260b1b35b0b_6_the_empress (1).png",
+      "PackagePath": "staticwebassets\\Images\\0dc82260b1b35b0b_6_the_empress (1).png"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\1.jfif",
+      "PackagePath": "staticwebassets\\Images\\1.jfif"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\55535618.jpg",
+      "PackagePath": "staticwebassets\\Images\\55535618.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Alice.jpg",
+      "PackagePath": "staticwebassets\\Images\\Alice.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Book-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book-1.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Book-2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book-2.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Book-3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book-3.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\S.jpg",
+      "PackagePath": "staticwebassets\\Images\\S.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\DashBoard.js",
+      "PackagePath": "staticwebassets\\Scripts\\DashBoard.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\Drop.js",
+      "PackagePath": "staticwebassets\\Scripts\\Drop.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\UploadFile.js",
+      "PackagePath": "staticwebassets\\Scripts\\UploadFile.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.intellisense.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.intellisense.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.min.map",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.min.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.slim.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.slim.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.slim.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery-3.4.1.slim.min.map",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate-vsdoc.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets\\Scripts\\modernizr-2.8.3.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Custom.css",
+      "PackagePath": "staticwebassets\\Style\\Custom.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\DashBoard.css",
+      "PackagePath": "staticwebassets\\Style\\DashBoard.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\DashBoard.css.map",
+      "PackagePath": "staticwebassets\\Style\\DashBoard.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Style.css",
+      "PackagePath": "staticwebassets\\Style\\Style.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Style.css.map",
+      "PackagePath": "staticwebassets\\Style\\Style.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Style.scss",
+      "PackagePath": "staticwebassets\\Style\\Style.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Style\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Style\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_alert.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_badge.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_card.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_close.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_containers.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_forms.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_functions.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_grid.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_images.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_maps.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_maps.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_modal.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_nav.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_placeholders.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_placeholders.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_popover.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_progress.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_root.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_tables.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_type.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_variables-dark.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_variables-dark.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_color-bg.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_color-bg.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_focus-ring.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_focus-ring.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_icon-link.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_icon-link.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_stacks.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_stacks.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\helpers\\_vr.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\helpers\\_vr.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_backdrop.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_backdrop.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_banner.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_banner.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_color-mode.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_color-mode.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\Style\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Task-Manager-Beta.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Task-Manager-Beta.props",
+      "PackagePath": "build\\Task-Manager-Beta.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Task-Manager-Beta.props",
+      "PackagePath": "buildMultiTargeting\\Task-Manager-Beta.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Task-Manager-Beta.props",
+      "PackagePath": "buildTransitive\\Task-Manager-Beta.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

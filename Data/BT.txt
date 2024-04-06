@@ -1,0 +1,37 @@
+Install-Package Microsoft.EntityframeworkCore
+Install-Package Microsoft.EntityframeworkCore.Design
+Install-Package Microsoft.EntityframeworkCore.SqlServer
+Install-Package Microsoft.EntityframeworkCore.Tools
+
+MAR03\SQLEXPRESS
+
+
+base(global::System.Configuration.ConfigurationManager.ConnectionStrings["NhaSachConnectionString"].ConnectionString, mappingSource)
+        
+Scaffold-DbContext "Server=MAR03\SQLEXPRESS;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Add-Migration AddAllTables
+Update-Database
+ 
+ [ Author ]
+ [ AllowAnonymous ]
+ 
+ ID UNIQUEIDENTIFIER DEFAULT NEWID() PRIMARY KEY,
+ 
+//---------------------------------------------------------------------------------------//
+
+builder.Services.AddDbContext<TaskManagerContext>
+(options => options.UseSqlServer(builder.Configuration.GetConnectionString("TaskManagerConnection")));
+
+//---------------------------------------------------------------------------------------//
+
+  "ConnectionStrings": {
+    "TaskManagerConnection": "Server=MAR03\\SQLEXPRESS;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True"
+  },
+  
+  //---------------------------------------------------------------------------------------//
+  
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+=> optionsBuilder.UseSqlServer("Server=MAR03\\SQLEXPRESS;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=true;");
+
+  //---------------------------------------------------------------------------------------//
