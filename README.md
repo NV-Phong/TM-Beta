@@ -5,28 +5,14 @@
 CTRL + B
 ## Step 2: Rename Server
 ### • appsetting.json
-```json
 
-"ConnectionStrings":
-{
-    "TaskManagerConnection":
-    "Server=MAR03\\SQLEXPRESS;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True"
-},
-  
-```
+![Screenshot](ScreenShots/AppSetting.png)
 
 ### • TaskManagerContext.cs
-```CSharp
 
-protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-=> optionsBuilder.UseSqlServer
-("Server=MAR03\\SQLEXPRESS;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=true;");
-
-```
+![Screenshot](ScreenShots/TaskManagerContext.png)
 
 ## Step 3: Update Database
 
-```
 Update-Database
 
-```
