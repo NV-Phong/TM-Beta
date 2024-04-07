@@ -20,7 +20,6 @@
     <None Include="wwwroot\Scripts\bootstrap.js.map" />
     <None Include="wwwroot\Scripts\bootstrap.min.js" />
     <None Include="wwwroot\Scripts\bootstrap.min.js.map" />
-    <None Include="wwwroot\Scripts\Drop.js" />
     <None Include="wwwroot\Scripts\jquery-3.4.1.intellisense.js" />
     <None Include="wwwroot\Scripts\jquery-3.4.1.js" />
     <None Include="wwwroot\Scripts\jquery-3.4.1.min.js" />

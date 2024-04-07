@@ -1,65 +1,76 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+﻿$(document).ready(function () {
+    $(".task").on("dragstart", function (event) {
+        $(this).addClass("dragging");
+    });
 
-   var dragSrcEl = null;
-   
-   function handleDragStart(e) {
-     this.style.opacity = '0.1';
-     this.style.border = '3px dashed #c4cad3';
-     
-     dragSrcEl = this;
- 
-     e.dataTransfer.effectAllowed = 'move';
-     e.dataTransfer.setData('text/html', this.innerHTML);
-   }
- 
-   function handleDragOver(e) {
-     if (e.preventDefault) {
-       e.preventDefault();
-     }
- 
-     e.dataTransfer.dropEffect = 'move';
-     
-     return false;
-   }
- 
-   function handleDragEnter(e) {
-     this.classList.add('task-hover');
-   }
- 
-   function handleDragLeave(e) {
-     this.classList.remove('task-hover');
-   }
- 
-   function handleDrop(e) {
-     if (e.stopPropagation) {
-       e.stopPropagation(); // stops the browser from redirecting.
-     }
-     
-     if (dragSrcEl != this) {
-       dragSrcEl.innerHTML = this.innerHTML;
-       this.innerHTML = e.dataTransfer.getData('text/html');
-     }
-     
-     return false;
-   }
- 
-   function handleDragEnd(e) {
-     this.style.opacity = '1';
-     this.style.border = 0;
-     
-     items.forEach(function (item) {
-       item.classList.remove('task-hover');
-     });
-   }
-   
-   
-   let items = document.querySelectorAll('.task'); 
-   items.forEach(function(item) {
-     item.addEventListener('dragstart', handleDragStart, false);
-     item.addEventListener('dragenter', handleDragEnter, false);
-     item.addEventListener('dragover', handleDragOver, false);
-     item.addEventListener('dragleave', handleDragLeave, false);
-     item.addEventListener('drop', handleDrop, false);
-     item.addEventListener('dragend', handleDragEnd, false);
-   });
- });
+    $(".project-column").on("dragover", function (event) {
+        event.preventDefault();
+        $(this).addClass("dragover");
+    });
+
+    $(".project-column").on("dragleave", function (event) {
+        $(this).removeClass("dragover");
+    });
+
+    $(".project-column").on("drop", function (event) {
+        event.preventDefault();
+        var droppedTask = $(".dragging");
+        var newColumn = $(this);
+        var newStatusName = newColumn.find(".project-column-heading__title").text();
+
+        // Update task status name
+        droppedTask.find(".task__stats span").text(newStatusName);
+
+        // Move task to new column
+        newColumn.find(".droppp").append(droppedTask);
+
+        // Clean up
+        $(this).removeClass("dragover");
+        droppedTask.removeClass("dragging");
+    });
+});
+
+//$(document).ready(function () {
+//    $(".task").on("dragstart", function (event) {
+//        $(this).addClass("dragging");
+//    });
+
+//    $(".project-column").on("dragover", function (event) {
+//        event.preventDefault();
+//        $(this).addClass("dragover");
+//    });
+
+//    $(".project-column").on("dragleave", function (event) {
+//        $(this).removeClass("dragover");
+//    });
+
+//    $(".project-column").on("drop", function (event) {
+//        event.preventDefault();
+//        var droppedTask = $(".dragging");
+//        var newColumn = $(this);
+//        var newStatusName = newColumn.find(".project-column-heading__title").text();
+
+//        // Update task status name
+//        droppedTask.find(".task__stats span").text(newStatusName);
+
+//        // Move task to new column
+//        newColumn.find(".droppp").append(droppedTask);
+
+//        // Clean up
+//        $(this).removeClass("dragover");
+//        droppedTask.removeClass("dragging");
+
+//        // Fetch to update task status in database
+//        var taskId = droppedTask.attr("data-task-id");
+//        fetch('/Projects/UpdateTaskStatus', {
+//            method: 'POST',
+//            headers: {
+//                'Content-Type': 'application/json'
+//            },
+//            body: JSON.stringify({ taskId: taskId, statusName: newStatusName })
+//        })
+//            .then(response => response.json())
+//            .then(data => console.log(data))
+//            .catch(error => console.error('Error:', error));
+//    });
+//});

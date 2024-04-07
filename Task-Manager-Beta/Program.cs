@@ -32,8 +32,24 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "dashboard",
+        pattern: "dashboard/{id?}",
+        defaults: new { controller = "Projects", action = "DashBoard" }
+    );
+
+    app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=LandingPage}/{id?}");
 
+});
+
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=LandingPage}/{id?}");
+
 app.Run();
+

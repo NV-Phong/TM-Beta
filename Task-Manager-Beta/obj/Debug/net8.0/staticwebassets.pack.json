@@ -113,10 +113,6 @@
       "PackagePath": "staticwebassets\\Scripts\\DashBoard.js"
     },
     {
-      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\Drop.js",
-      "PackagePath": "staticwebassets\\Scripts\\Drop.js"
-    },
-    {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\UploadFile.js",
       "PackagePath": "staticwebassets\\Scripts\\UploadFile.js"
     },

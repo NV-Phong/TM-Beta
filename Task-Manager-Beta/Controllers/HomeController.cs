@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Task_Manager_Beta.Models;
+using Task_Manager_Beta.ViewModels;
 
 namespace Task_Manager_Beta.Controllers
 {
