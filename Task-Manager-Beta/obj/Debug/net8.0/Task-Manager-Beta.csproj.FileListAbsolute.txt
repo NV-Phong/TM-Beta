@@ -250,5 +250,3 @@ D:\Task Manager\Task-Manager-Beta\bin\Debug\net8.0\runtimes\win\lib\net7.0\Micro
 D:\Task Manager\Task-Manager-Beta\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\Task Manager\Task-Manager-Beta\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Task Manager\Task-Manager-Beta\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-D:\Task Manager\Task-Manager-Beta\bin\Debug\net8.0\BCrypt.Net-Next.dll
-D:\Task Manager\Task-Manager-Beta\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

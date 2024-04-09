@@ -1,12 +1,12 @@
-﻿@model Task_Manager_Beta.ViewModels.ProjectViewModel
+﻿@* @model List<string> *@
+@model Task_Manager_Beta.ViewModels.ProjectViewModel
 
 @{
     ViewData["Title"] = "DashBoard";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    // string Idproject = ViewContext.RouteData.Values["Idproject"]?.ToString();
 }
 
-                
+
 <div class='app'>
 
     <main class='project'>
@@ -14,91 +14,54 @@
         <div class='project-info'>
 
             <h1>DashBoard</h1>
-
-            
             <div class='project-participants'>
                 <span></span>
                 <span></span>
                 <span></span>
                 <button class='project-participants__add'>Add Participant</button>
-            </div>
-            
-        </div>
 
+            </div>
+        </div>
 
         <div class='project-tasks'>
 
             @foreach (var status in Model.Templates)
             {
-                
-
             <div class='project-column'>
                     <div class='project-column-heading'>
-
-                        <h2 class='project-column-heading__title'>
-                            @status.IdstatusNavigation.StatusName
-                            <div class="getidstatus" style="display:none">@status.Idstatus</div>
-                        </h2>
-
-                        <button class='project-column-heading__options'>
-                            <i class="fas fa-ellipsis-h"></i>
-                        </button>
-
+                        <h2 class='project-column-heading__title'>@status.IdstatusNavigation.StatusName</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
                     </div>
-                    <a class="btn btn-custom-green border-1 border-custom-dark" href="/Tasks/Create/?idproject=@status.Idproject&idstatus=@status.Idstatus">Create</a>
-
-
                     <div class='droppp'>
 
                         @foreach (var task in Model.Tasks)
                         {
                             if (@status.IdstatusNavigation.StatusName == @task.IdstatusNavigation.StatusName)
                             {
-                                <a class="text-decoration-none text-custom-dark" asp-controller="Tasks" asp-action="Details" asp-route-id="@task.Idtask">
-                                    <div class='task' draggable='true'>
-                                        <div class='task__tags'><span class='task__tag task__tag--copyright'>Tag</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
-                                        <p>@task.TaskName</p>
-                                        <div class='task__stats'>
-                                            <div>
-                                                <strong>Ngày Tạo:</strong>
-                                                <span>@task.DayCreate</span>
-                                            </div>
+                                <div class='task' draggable='true' data-task-id="@task.Idtask">
+                                    <div class='task__tags'><span class='task__tag task__tag--copyright'>Tag</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                                    <p>@task.TaskName</p>
+                                    <div class='task__stats'>
+                                        <div>
+                                            <strong>Ngày Tạo:</strong>
+                                            <span>@task.DayCreate</span>
+                                        </div>
 
-                                            <div>
-                                                <strong>Hạn Chót:</strong>
-                                                <span>@task.Deadline</span>
-                                            </div>
+                                        <div>
+                                            <strong>Hạn Chót:</strong>
+                                            <span>@task.Deadline</span>
+                                        </div>
 
-                                            <div>
-                                                <strong>Trạng Thái:</strong>
-                                                <span>@task.IdstatusNavigation.StatusName</span>
-                                            </div>
-
-
-
-@*                                             <div>
-                                                <a class="btn" href="/Tasks/Edit/idproject=@task.Idproject&idtask=@task.Idtask"><img class="p-2" src="~/Graphics/edit.svg" alt="Alternate Text" />Edit</a>
-
-                                                <a class="btn" asp-controller="Tasks" asp-action="Delete" asp-route-idtask="@task.Idtask"><img class="p-2" src="~/Graphics/delete.svg" alt="Alternate Text" />Delete</a>
-                                            </div> *@
-
-
+                                        <div>
+                                            <strong>Trạng Thái:</strong>
+                                            <span>@task.IdstatusNavigation.StatusName</span>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             }
-
-                            
                         }
-                        
 
                     </div>
-
-                     
-
             </div>
-                
-                
             }
         </div>
 
@@ -153,5 +116,7 @@
         </div>
     </aside>
 </div>
+
+
 
 

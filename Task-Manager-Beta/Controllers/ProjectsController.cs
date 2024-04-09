@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +11,6 @@ using Task_Manager_Beta.ViewModels;
 
 namespace Task_Manager_Beta.Controllers
 {
-    [Authorize]
     public class ProjectsController : Controller
     {
         private readonly TaskManagerContext _context;
@@ -97,7 +95,6 @@ namespace Task_Manager_Beta.Controllers
 
 
 
-
         // GET: Projects/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -152,12 +149,10 @@ namespace Task_Manager_Beta.Controllers
 
                 //-----------------------------------------------------------------------------------//
 
-
                 return RedirectToAction(nameof(Index));
             }
             return View(project);
         }
-
 
         // GET: Projects/Edit/5
         public async Task<IActionResult> Edit(int? id)
