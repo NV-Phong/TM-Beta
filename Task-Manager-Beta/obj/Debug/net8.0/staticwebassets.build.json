@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SFlyFxwQinitWvDJbvWeTY251IyEw4ogppvoFgTxuAU=",
+  "Hash": "GrG2q9X4RW4GxitYwFJYtEnt5lZlWNLCJl7xQTH761Y=",
   "Source": "Task-Manager-Beta",
   "BasePath": "_content/Task-Manager-Beta",
   "Mode": "Default",
@@ -794,25 +794,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Scripts\\DashBoard.js"
-    },
-    {
-      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\Drop.js",
-      "SourceId": "Task-Manager-Beta",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
-      "BasePath": "_content/Task-Manager-Beta",
-      "RelativePath": "Scripts/Drop.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Scripts\\Drop.js"
     },
     {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\jquery.validate.js",

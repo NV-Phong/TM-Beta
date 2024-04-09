@@ -1,0 +1,45 @@
+﻿@model Task_Manager_Beta.Data.User;
+
+<div class="panel panel-primary">
+    <div class="panel-heading panel-heading-prod"><i class="fa fa-spinner fa-spin"></i> Đăng nhập hệ thống</div>
+   
+    
+    
+    
+    
+    
+    
+    <div class="panel-body">
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+
+        <form class="form form-horizontal" asp-action="Login" asp-controller="User" method="POST">
+            <div class="form-group">
+                <label asp-for="UserName" class="col-md-3 control-label"></label>
+                <div class="col-md-9">
+                    <input class="form-control" asp-for="UserName" placeholder="Nhập tên đăng nhập" autofocus required />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="col-md-3 control-label"></label>
+                <div class="col-md-9">
+                    <input type="password" class="form-control" asp-for="Password" id="password" placeholder="Nhập mật khẩu" required />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-9">
+                    <button type="submit" class="btnpd btn btn-custom-green border-1 border-custom-dark">Đăng nhập</button>
+                </div>
+            </div>
+        </form>
+        <a asp-controller="User" asp-action="ExternalLogin" asp-route-provider="Google" class="btnpd btn btn-custom-green border-1 border-custom-dark">Login with Google</a>
+    </div>
+   
+</div>
+       

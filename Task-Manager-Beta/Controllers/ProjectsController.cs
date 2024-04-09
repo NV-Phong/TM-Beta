@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Task_Manager_Beta.Data;
+using Task_Manager_Beta.ViewModels;
 
 namespace Task_Manager_Beta.Controllers
 {
+    [Authorize]
     public class ProjectsController : Controller
     {
         private readonly TaskManagerContext _context;
@@ -24,11 +28,75 @@ namespace Task_Manager_Beta.Controllers
             return View(await _context.Projects.ToListAsync());
         }
 
-        
-        public async Task<IActionResult> DashBoard()
+
+        public async Task<IActionResult> DashBoard(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var project = await _context.Projects
+                .Include(p => p.Templates)
+                .ThenInclude(t => t.IdstatusNavigation)
+                .FirstOrDefaultAsync(p => p.Idproject == id);
+
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            var GetTemplate = project.Templates.Where(m => m.Idproject == id).ToList();
+
+            var GetTask = await _context.Tasks.Where(m => m.Idproject == id).ToListAsync();
+
+
+            var GetDashBoard = new ProjectViewModel
+            {
+               Templates = GetTemplate,
+               Tasks = GetTask,  
+            };
+
+            return View(GetDashBoard);
         }
+
+        public async Task<IActionResult> UpdateTaskStatus(int id, [FromBody] string newStatusName)
+        {
+            try
+            {
+                var task = await _context.Tasks.FindAsync(id);
+
+                if (task == null)
+                {
+                    return NotFound();
+                }
+
+                // Tìm id của Status tương ứng với newStatusName
+                var StatusId = await _context.Statuses
+                    .Where(s => s.StatusName == newStatusName)
+                    .Select(s => s.Idstatus)
+                    .FirstOrDefaultAsync();
+
+
+                // Cập nhật trạng thái mới cho task
+                task.Idstatus = StatusId;
+
+
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.Tasks.Update(task);
+                await _context.SaveChangesAsync();
+
+                return Ok("Task status updated successfully!");
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
+
 
         // GET: Projects/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -37,7 +105,6 @@ namespace Task_Manager_Beta.Controllers
             {
                 return NotFound();
             }
-
             var project = await _context.Projects
                 .FirstOrDefaultAsync(m => m.Idproject == id);
             if (project == null)
@@ -85,10 +152,12 @@ namespace Task_Manager_Beta.Controllers
 
                 //-----------------------------------------------------------------------------------//
 
+
                 return RedirectToAction(nameof(Index));
             }
             return View(project);
         }
+
 
         // GET: Projects/Edit/5
         public async Task<IActionResult> Edit(int? id)

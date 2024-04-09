@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Content Remove="Areas\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <None Remove="Areas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\Scripts\bootstrap.bundle.js" />
     <None Include="wwwroot\Scripts\bootstrap.bundle.js.map" />
     <None Include="wwwroot\Scripts\bootstrap.bundle.min.js" />
@@ -20,7 +27,6 @@
     <None Include="wwwroot\Scripts\bootstrap.js.map" />
     <None Include="wwwroot\Scripts\bootstrap.min.js" />
     <None Include="wwwroot\Scripts\bootstrap.min.js.map" />
-    <None Include="wwwroot\Scripts\Drop.js" />
     <None Include="wwwroot\Scripts\jquery-3.4.1.intellisense.js" />
     <None Include="wwwroot\Scripts\jquery-3.4.1.js" />
     <None Include="wwwroot\Scripts\jquery-3.4.1.min.js" />
@@ -186,6 +192,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.3" />
     <PackageReference Include="Microsoft.EntityframeworkCore" Version="8.0.3" />
     <PackageReference Include="Microsoft.EntityframeworkCore.Design" Version="8.0.3">
       <PrivateAssets>all</PrivateAssets>

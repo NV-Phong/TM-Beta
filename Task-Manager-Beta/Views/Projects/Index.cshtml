@@ -15,6 +15,7 @@
         @foreach (var item in Model)
         {   
             <div class="col-md-3 g-3 customcard">
+                <a class="fix btn" asp-controller="Projects" asp-route-id="@item.Idproject">
                 <a class="fix btn" asp-controller="Projects" asp-action="DashBoard" asp-route-id="@item.Idproject">
                     <div class="card">
                         <div class="card-body">
@@ -33,7 +34,7 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a></a>
             </div>
             if (++count % 4 == 0)
             {
