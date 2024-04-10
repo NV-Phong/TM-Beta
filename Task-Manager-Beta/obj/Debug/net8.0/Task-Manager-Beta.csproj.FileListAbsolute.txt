@@ -1014,3 +1014,4 @@ D:\hoc\SVNam4\Main_taskManager\Task-Manager-Beta\obj\Debug\net8.0\refint\Task-Ma
 D:\hoc\SVNam4\Main_taskManager\Task-Manager-Beta\obj\Debug\net8.0\Task-Manager-Beta.pdb
 D:\hoc\SVNam4\Main_taskManager\Task-Manager-Beta\obj\Debug\net8.0\Task-Manager-Beta.genruntimeconfig.cache
 D:\hoc\SVNam4\Main_taskManager\Task-Manager-Beta\obj\Debug\net8.0\ref\Task-Manager-Beta.dll
+D:\hoc\SVNam4\Main_taskManager\Task-Manager-Beta\obj\Debug\net8.0\Task-Manager-Beta.sourcelink.json

@@ -43,7 +43,7 @@ namespace Task_Manager_Beta.Controllers
                 user.Hide = 0;  
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Projects");
+                return RedirectToAction("Index", "Projects", user.Iduser);
             }
             return View();
         }
@@ -67,7 +67,7 @@ namespace Task_Manager_Beta.Controllers
                     var claims = new List<Claim>
                     {
                         new Claim(ClaimTypes.Name, userLogin.UserName),
-                        new Claim(ClaimTypes.Role, userLogin.Iduser.ToString()),
+                        new Claim("UserId", userLogin.Iduser.ToString()),
                     };
 
                     var claimsIdentity = new ClaimsIdentity(claims, "TaskMange");
@@ -78,7 +78,7 @@ namespace Task_Manager_Beta.Controllers
 
                     await HttpContext.SignInAsync("TaskMange", new ClaimsPrincipal(claimsIdentity), authProperties);
 
-                    return RedirectToAction("Index", "Projects");
+                    return RedirectToAction("Index", "Projects", new { iduser = userLogin.Iduser });
                 }
                 else
                 {

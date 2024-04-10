@@ -46,15 +46,9 @@ namespace Task_Manager_Beta.Controllers
 
         public async Task<IActionResult> Create(int? idproject, int? idstatus)
         {
-            var role = User.FindFirst(ClaimTypes.Role)?.Value;
-            var idpro = await _context.Projects.Where(t => t.Idproject == idproject).FirstOrDefaultAsync();
-            if (role == idpro.Idleader.ToString())
-            {
-                ViewData["Idproject"] = new SelectList(_context.Projects, "Idproject", "Idproject");
-                ViewData["Idstatus"] = new SelectList(_context.Statuses, "Idstatus", "Idstatus");
-                return View();
-            }
-            return RedirectToAction("DashBoard", "Projects");
+            ViewData["Idproject"] = new SelectList(_context.Projects, "Idproject", "Idproject");
+            ViewData["Idstatus"] = new SelectList(_context.Statuses, "Idstatus", "Idstatus");
+            return View();
         }
 
         // POST: Tasks/Create
@@ -69,9 +63,9 @@ namespace Task_Manager_Beta.Controllers
             
             await _context.SaveChangesAsync();
             
-            return RedirectToAction("DashBoard", "Projects", new { id = idproject.Value });
+            return RedirectToAction("GetRole", "Projects", new { id = idproject.Value });
         }
-
+        [Authorize(Roles = "Leader")]
         // GET: Tasks/Edit/5
         public async Task<IActionResult> Edit(int? idproject, int? idtask)
         {
@@ -93,6 +87,7 @@ namespace Task_Manager_Beta.Controllers
         // POST: Tasks/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Leader")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit([Bind("Idtask,Idproject,Idstatus,TaskName,DayCreate,DayStart,Deadline,Hide")] Data.Task task, int? idproject)

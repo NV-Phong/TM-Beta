@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Task-Manager-Beta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfdc3c20a82e1f406604592dc3a1fd79a52e99b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Task-Manager-Beta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Task-Manager-Beta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

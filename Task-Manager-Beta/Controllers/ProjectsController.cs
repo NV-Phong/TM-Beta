@@ -26,15 +26,13 @@ namespace Task_Manager_Beta.Controllers
         }
 
         // GET: Projects
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? iduser)
         {
-            var role = User.FindFirst(ClaimTypes.Role)?.Value;
-            var listMem = await _context.Members.Where(p => p.Iduser.ToString() == role).ToListAsync();
+            var listMem = await _context.Members.Where(p => p.Iduser == iduser).ToListAsync();
 
-            var listPro = await _context.Members
-                                        .Where(p => p.Iduser.ToString() == role)
-                                        .Select(m => m.IdprojectNavigation)
-                                        .ToListAsync();
+            var listPro = await _context.Members.Where(p => p.Iduser == iduser)
+                                                .Select(m => m.IdprojectNavigation)
+                                                .ToListAsync();
 
             var GetProject = new MemberViewModel
             {
@@ -59,13 +57,16 @@ namespace Task_Manager_Beta.Controllers
             var permissions = await _context.Permisssions
                 .Where(p => p.Idproject == id) // Lọc các bản ghi có Idproject bằng id đã cho
                 .ToListAsync();
-            var role = User.FindFirst(ClaimTypes.Role)?.Value;
-            var permission = permissions.FirstOrDefault(p => p.Iduser == int.Parse(role));
+            var claimsPrincipal = User as ClaimsPrincipal;
+            var userIdClaim = claimsPrincipal?.FindFirst("UserId");
+            string userId = userIdClaim.Value;
+            var permission = permissions.FirstOrDefault(p => p.Iduser == int.Parse(userId));
             // Tạo danh sách claims dựa trên thông tin của project
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, User.Identity.Name),
                 new Claim(ClaimTypes.Role, permission.Role),
+                new Claim("UserId", userId),
                 // Thêm các claim khác nếu cần
             };
 
@@ -146,9 +147,6 @@ namespace Task_Manager_Beta.Controllers
             }
         }
 
-
-
-
         // GET: Projects/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -167,7 +165,6 @@ namespace Task_Manager_Beta.Controllers
         }
 
         // GET: Projects/Create
-        [Authorize(Roles = "Leader")]
 
         public IActionResult Create()
         {
@@ -177,7 +174,6 @@ namespace Task_Manager_Beta.Controllers
         // POST: Projects/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "Leader")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Idproject,ProjectName,Idleader,DayCreate,Image,Hide")] Project project)
@@ -206,11 +202,13 @@ namespace Task_Manager_Beta.Controllers
 
                 //-----------------------------------------------------------------------------------//
 
-                var role = User.FindFirst(ClaimTypes.Role)?.Value;
+                var claimsPrincipal = User as ClaimsPrincipal;
+                var userIdClaim = claimsPrincipal?.FindFirst("UserId");
+                string userId = userIdClaim.Value;
 
                 var DefaultMemberList = new Member
                 {
-                    Iduser = int.Parse(role),
+                    Iduser = int.Parse(userId),
                     Idproject = project.Idproject,
                 };
                 _context.Members.Add(DefaultMemberList);
@@ -218,7 +216,7 @@ namespace Task_Manager_Beta.Controllers
 
                 var DefaultPermisssion = new Permisssion
                 {
-                    Iduser = int.Parse(role),
+                    Iduser = int.Parse(userId),
                     Idproject = project.Idproject,
                     Role = "Leader",
                     Object = "ALL",
@@ -227,12 +225,12 @@ namespace Task_Manager_Beta.Controllers
                 _context.Permisssions.Add(DefaultPermisssion);
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", new { iduser = userId });
             }
             return View(project);
         }
 
-
+ 
         // GET: Projects/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
