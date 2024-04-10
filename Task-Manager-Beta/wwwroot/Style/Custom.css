@@ -1,0 +1,60 @@
+﻿/* Custom */
+.navbutton {
+    width: 63px;
+    height: 63px;
+    padding-left:12px;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 99px #54545426, 20px 20px 99px #54545426;
+    background: linear-gradient(180deg, rgb(229.51, 229.51, 229.51) 0%, rgb(255, 255, 255) 100%);
+}
+
+.card:hover {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-color: rgba(162, 179, 207, 0.2) !important;
+}
+
+.navb {
+    padding-left: 12px;
+    font-size: 18px;
+}
+.drops {
+    border-radius: 10px;
+    box-shadow: 4px 6px 15.8px 0px rgba(201, 245, 184, 0.05), 0px 4px 28.8px 0px rgba(201, 245, 184, 0.10), 0px 4px 31.7px 0px rgba(201, 245, 184, 0.15);
+}
+
+.hv:hover {
+    background-color: #A7D097;
+}
+
+.navbl {
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0px -1px 40px 0px rgba(0, 0, 0, 0.30), 0px 9px 37.2px 0px rgba(82, 82, 82, 0.10), 0px 18px 91.2px 0px rgba(0, 0, 0, 0.15), 0px 27px 196.9px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(16.5px);
+    margin-bottom:12px;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Graphics/Hexagon.svg);
+}
+
+.fix *
+{
+    text-align:left;
+}
+
+.btnpd
+{
+    margin-top:10px;
+
+}
+.loginn >*
+{
+    display:inline-block;
+    margin-left: 10px;
+}

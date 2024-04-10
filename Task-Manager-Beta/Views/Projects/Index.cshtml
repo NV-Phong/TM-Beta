@@ -1,0 +1,45 @@
+﻿@model Task_Manager_Beta.ViewModels.MemberViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 0;
+}
+
+<h1>List Project</h1>
+
+<a class="btn btn-custom-green border-1 border-custom-dark" href="@Url.Action("Create")">Create</a>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        @foreach (var item in Model.Projects)
+        {   
+            <div class="col-md-3 g-3 customcard">
+                <a class="fix btn" asp-controller="Projects" asp-route-id="@item.Idproject">
+                <a class="fix btn" asp-controller="Projects" asp-action="GetRole" asp-route-id="@item.Idproject">
+                    <div class="card">
+                        <div class="card-body">
+                        
+                            <p class="card-text"> <strong>Idproject:</strong> @Html.DisplayFor(modelItem => item.Idproject)</p>
+                            <p class="card-text"><strong>Tên Project:</strong> @Html.DisplayFor(modelItem => item.ProjectName)</p>
+                            <p class="card-text"> <strong>DayCreate:</strong> @Html.DisplayFor(modelItem => item.DayCreate)</p>
+                            <p class="card-text"> <strong>Image:</strong> @Html.DisplayFor(modelItem => item.Image)</p>
+                            <p class="card-text"> <strong>Hide:</strong> @Html.DisplayFor(modelItem => item.Hide)</p>
+                        
+                            <div class="d-flex justify-content-center">
+                                <a class="btn" asp-action="Edit" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/edit.svg" alt="Alternate Text" />Edit</a>
+                                <a class="btn" asp-action="Details" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/details.svg" alt="Alternate Text" />Details</a>
+                                <a class="btn" asp-action="Delete" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/delete.svg" alt="Alternate Text" />Delete</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </a></a>
+            </div>
+            if (++count % 4 == 0)
+            {
+            @:</div><div class="row">
+            }
+        }
+    </div>
+</div>
