@@ -180,7 +180,19 @@ namespace Task_Manager_Beta.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(project);
+                var claimsPrincipal = User as ClaimsPrincipal;
+                var userIdClaim = claimsPrincipal?.FindFirst("UserId");
+                string userId = userIdClaim.Value;
+
+                var DefaultProject = new Project
+                {
+                    Idleader = int.Parse(userId),
+                    Idproject = project.Idproject,
+                    DayCreate = project.DayCreate,
+                    Image = project.Image,
+                    Hide = 0
+                };
+                _context.Add(DefaultProject);
                 await _context.SaveChangesAsync();
 
                 //-----------------------------------------------------------------------------------//
@@ -202,9 +214,7 @@ namespace Task_Manager_Beta.Controllers
 
                 //-----------------------------------------------------------------------------------//
 
-                var claimsPrincipal = User as ClaimsPrincipal;
-                var userIdClaim = claimsPrincipal?.FindFirst("UserId");
-                string userId = userIdClaim.Value;
+                
 
                 var DefaultMemberList = new Member
                 {

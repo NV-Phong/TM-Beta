@@ -51,22 +51,24 @@ $(document).ready(function () {
         var newStatusName = newColumn.find(".project-column-heading__title").text();
 
         // Update task status name
-        droppedTask.find(".task__stats span").text(newStatusName);
+        droppedTask.find(".status-name").text(newStatusName);
+        console.log(droppedTask.find(".status-name").text);
 
         // Move task to new column
         newColumn.find(".droppp").append(droppedTask);
 
         // Clean up
         $(this).removeClass("dragover");
+        var taskId = droppedTask.data("task-id");
         droppedTask.removeClass("dragging");
 
         // Send newStatusName to the controller
-        var taskId = droppedTask.data("task-id");
+        //var taskId = droppedTask.data("task-id");
         updateTaskStatus(taskId, newStatusName);
     });
 
     function updateTaskStatus(taskId, newStatusName) {
-        fetch("/Dashboard/UpdateTaskStatus/" + taskId, {
+        fetch("/Projects/UpdateTaskStatus/" + taskId, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
