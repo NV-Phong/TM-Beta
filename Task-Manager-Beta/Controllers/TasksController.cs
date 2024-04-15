@@ -42,6 +42,11 @@ namespace Task_Manager_Beta.Controllers
             return View(task);
         }
 
+        public async Task<IActionResult> TimeLine()
+        {
+            return View();
+        }
+
         // GET: Tasks/Create
 
         public async Task<IActionResult> Create(int? idproject, int? idstatus)
