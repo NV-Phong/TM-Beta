@@ -150,8 +150,7 @@
               "RelativeToolTip": "Views\\Calendar\\Calendar.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:00:40.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T08:00:40.967Z"
             },
             {
               "$type": "Document",
@@ -161,7 +160,7 @@
               "RelativeDocumentMoniker": "Controllers\\CalendarController.cs",
               "ToolTip": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Controllers\\CalendarController.cs",
               "RelativeToolTip": "Controllers\\CalendarController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBoAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T06:58:15.438Z",
               "EditorCaption": ""
