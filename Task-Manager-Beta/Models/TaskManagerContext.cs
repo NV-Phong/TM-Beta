@@ -20,6 +20,8 @@ public partial class TaskManagerContext : DbContext
 
     public virtual DbSet<Condition> Conditions { get; set; }
 
+    public virtual DbSet<Listtemplate> Listtemplates { get; set; }
+
     public virtual DbSet<Member> Members { get; set; }
 
     public virtual DbSet<Permisssion> Permisssions { get; set; }
@@ -46,7 +48,7 @@ public partial class TaskManagerContext : DbContext
     {
         modelBuilder.Entity<Assignment>(entity =>
         {
-            entity.HasKey(e => new { e.Iduser, e.Idtask }).HasName("PK__ASSIGNME__612AE3C08133FCF6");
+            entity.HasKey(e => new { e.Iduser, e.Idtask }).HasName("PK__ASSIGNME__612AE3C007018D2B");
 
             entity.ToTable("ASSIGNMENT");
 
@@ -59,17 +61,17 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdtaskNavigation).WithMany(p => p.Assignments)
                 .HasForeignKey(d => d.Idtask)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ASSIGNMEN__IDTas__6383C8BA");
+                .HasConstraintName("FK__ASSIGNMEN__IDTas__656C112C");
 
             entity.HasOne(d => d.IduserNavigation).WithMany(p => p.Assignments)
                 .HasForeignKey(d => d.Iduser)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ASSIGNMEN__IDUse__628FA481");
+                .HasConstraintName("FK__ASSIGNMEN__IDUse__6477ECF3");
         });
 
         modelBuilder.Entity<Condition>(entity =>
         {
-            entity.HasKey(e => e.Idcondition).HasName("PK__CONDITIO__452B4D93285C0699");
+            entity.HasKey(e => e.Idcondition).HasName("PK__CONDITIO__452B4D93615D6001");
 
             entity.ToTable("CONDITION");
 
@@ -80,17 +82,33 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdpermissionNavigation).WithMany(p => p.Conditions)
                 .HasForeignKey(d => d.Idpermission)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CONDITION__IDPer__6754599E");
+                .HasConstraintName("FK__CONDITION__IDPer__693CA210");
 
             entity.HasOne(d => d.IdworkflowNavigation).WithMany(p => p.Conditions)
                 .HasForeignKey(d => d.Idworkflow)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CONDITION__IDWor__68487DD7");
+                .HasConstraintName("FK__CONDITION__IDWor__6A30C649");
+        });
+
+        modelBuilder.Entity<Listtemplate>(entity =>
+        {
+            entity.HasKey(e => e.IdlistTemplate).HasName("PK__LISTTEMP__55547DE54957B17C");
+
+            entity.ToTable("LISTTEMPLATE");
+
+            entity.Property(e => e.IdlistTemplate).HasColumnName("IDListTemplate");
+            entity.Property(e => e.Idtemplate).HasColumnName("IDTemplate");
+            entity.Property(e => e.StatusName).HasMaxLength(50);
+
+            entity.HasOne(d => d.IdtemplateNavigation).WithMany(p => p.Listtemplates)
+                .HasForeignKey(d => d.Idtemplate)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__LISTTEMPL__IDTem__6B24EA82");
         });
 
         modelBuilder.Entity<Member>(entity =>
         {
-            entity.HasKey(e => e.Idmember).HasName("PK__MEMBER__7EB75A63D92FB36D");
+            entity.HasKey(e => e.Idmember).HasName("PK__MEMBER__7EB75A63B9ADC7C1");
 
             entity.ToTable("MEMBER");
 
@@ -101,17 +119,17 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdprojectNavigation).WithMany(p => p.Members)
                 .HasForeignKey(d => d.Idproject)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__MEMBER__IDProjec__619B8048");
+                .HasConstraintName("FK__MEMBER__IDProjec__6383C8BA");
 
             entity.HasOne(d => d.IduserNavigation).WithMany(p => p.Members)
                 .HasForeignKey(d => d.Iduser)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__MEMBER__IDUser__60A75C0F");
+                .HasConstraintName("FK__MEMBER__IDUser__628FA481");
         });
 
         modelBuilder.Entity<Permisssion>(entity =>
         {
-            entity.HasKey(e => e.Idpermission).HasName("PK__PERMISSS__0553C49AB4E77293");
+            entity.HasKey(e => e.Idpermission).HasName("PK__PERMISSS__0553C49A071A4B4F");
 
             entity.ToTable("PERMISSSION");
 
@@ -122,17 +140,17 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdprojectNavigation).WithMany(p => p.Permisssions)
                 .HasForeignKey(d => d.Idproject)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PERMISSSI__IDPro__656C112C");
+                .HasConstraintName("FK__PERMISSSI__IDPro__6754599E");
 
             entity.HasOne(d => d.IduserNavigation).WithMany(p => p.Permisssions)
                 .HasForeignKey(d => d.Iduser)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PERMISSSI__IDUse__6477ECF3");
+                .HasConstraintName("FK__PERMISSSI__IDUse__66603565");
         });
 
         modelBuilder.Entity<Project>(entity =>
         {
-            entity.HasKey(e => e.Idproject).HasName("PK__PROJECT__B0529955CFDF06BE");
+            entity.HasKey(e => e.Idproject).HasName("PK__PROJECT__B0529955FD19BFEF");
 
             entity.ToTable("PROJECT");
 
@@ -144,19 +162,23 @@ public partial class TaskManagerContext : DbContext
 
         modelBuilder.Entity<Status>(entity =>
         {
-            entity.HasKey(e => e.Idstatus).HasName("PK__STATUS__8DA245106739C773");
+            entity.HasKey(e => e.Idstatus).HasName("PK__STATUS__8DA24510AF0F9F38");
 
             entity.ToTable("STATUS");
 
-            entity.HasIndex(e => e.StatusName, "UQ__STATUS__05E7698A81D61DE0").IsUnique();
-
             entity.Property(e => e.Idstatus).HasColumnName("IDStatus");
+            entity.Property(e => e.Idproject).HasColumnName("IDProject");
             entity.Property(e => e.StatusName).HasMaxLength(50);
+
+            entity.HasOne(d => d.IdprojectNavigation).WithMany(p => p.Statuses)
+                .HasForeignKey(d => d.Idproject)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__STATUS__IDProjec__6C190EBB");
         });
 
         modelBuilder.Entity<Task>(entity =>
         {
-            entity.HasKey(e => e.Idtask).HasName("PK__TASK__BCC3A1F92D2AF717");
+            entity.HasKey(e => e.Idtask).HasName("PK__TASK__BCC3A1F9504858B2");
 
             entity.ToTable("TASK");
 
@@ -171,17 +193,17 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdprojectNavigation).WithMany(p => p.Tasks)
                 .HasForeignKey(d => d.Idproject)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__TASK__IDProject__5DCAEF64");
+                .HasConstraintName("FK__TASK__IDProject__5FB337D6");
 
             entity.HasOne(d => d.IdstatusNavigation).WithMany(p => p.Tasks)
                 .HasForeignKey(d => d.Idstatus)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__TASK__IDStatus__5EBF139D");
+                .HasConstraintName("FK__TASK__IDStatus__60A75C0F");
         });
 
         modelBuilder.Entity<Taskdetail>(entity =>
         {
-            entity.HasKey(e => e.Idtask).HasName("PK__TASKDETA__BCC3A1F9F0F81026");
+            entity.HasKey(e => e.Idtask).HasName("PK__TASKDETA__BCC3A1F9E297B0EB");
 
             entity.ToTable("TASKDETAILS");
 
@@ -192,37 +214,29 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdtaskNavigation).WithOne(p => p.Taskdetail)
                 .HasForeignKey<Taskdetail>(d => d.Idtask)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__TASKDETAI__IDTas__5FB337D6");
+                .HasConstraintName("FK__TASKDETAI__IDTas__619B8048");
         });
 
         modelBuilder.Entity<Template>(entity =>
         {
-            entity.HasKey(e => e.Idtemplate).HasName("PK__TEMPLATE__AB4388EFDD927C1E");
+            entity.HasKey(e => e.Idtemplate).HasName("PK__TEMPLATE__AB4388EFB0D1E74B");
 
             entity.ToTable("TEMPLATE");
 
+            entity.HasIndex(e => e.TemplateName, "UQ__TEMPLATE__A6C2DA6656661883").IsUnique();
+
             entity.Property(e => e.Idtemplate).HasColumnName("IDTemplate");
-            entity.Property(e => e.Idproject).HasColumnName("IDProject");
-            entity.Property(e => e.Idstatus).HasColumnName("IDStatus");
-
-            entity.HasOne(d => d.IdprojectNavigation).WithMany(p => p.Templates)
-                .HasForeignKey(d => d.Idproject)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__TEMPLATE__IDProj__693CA210");
-
-            entity.HasOne(d => d.IdstatusNavigation).WithMany(p => p.Templates)
-                .HasForeignKey(d => d.Idstatus)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__TEMPLATE__IDStat__6A30C649");
+            entity.Property(e => e.TemplateName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Iduser).HasName("PK__USER__EAE6D9DF10325B4D");
+            entity.HasKey(e => e.Iduser).HasName("PK__USER__EAE6D9DFA1CC6D4F");
 
             entity.ToTable("USER");
 
             entity.Property(e => e.Iduser).HasColumnName("IDUser");
+            entity.Property(e => e.Avatar).IsUnicode(false);
             entity.Property(e => e.Email)
                 .HasMaxLength(50)
                 .IsUnicode(false);
@@ -232,7 +246,7 @@ public partial class TaskManagerContext : DbContext
 
         modelBuilder.Entity<Workflow>(entity =>
         {
-            entity.HasKey(e => e.Idworkflow).HasName("PK__WORKFLOW__7D45E40AA14ADF65");
+            entity.HasKey(e => e.Idworkflow).HasName("PK__WORKFLOW__7D45E40A469AE309");
 
             entity.ToTable("WORKFLOW");
 
@@ -242,7 +256,7 @@ public partial class TaskManagerContext : DbContext
             entity.HasOne(d => d.IdstatusNavigation).WithMany(p => p.Workflows)
                 .HasForeignKey(d => d.Idstatus)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__WORKFLOW__IDStat__66603565");
+                .HasConstraintName("FK__WORKFLOW__IDStat__68487DD7");
         });
 
         OnModelCreatingPartial(modelBuilder);

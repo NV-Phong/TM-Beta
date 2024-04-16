@@ -17,7 +17,7 @@ namespace Task_Manager_Beta.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -40,7 +40,7 @@ namespace Task_Manager_Beta.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idassignment"));
 
                     b.HasKey("Iduser", "Idtask")
-                        .HasName("PK__ASSIGNME__612AE3C08133FCF6");
+                        .HasName("PK__ASSIGNME__612AE3C007018D2B");
 
                     b.HasIndex("Idtask");
 
@@ -65,13 +65,38 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnName("IDWorkflow");
 
                     b.HasKey("Idcondition")
-                        .HasName("PK__CONDITIO__452B4D93285C0699");
+                        .HasName("PK__CONDITIO__452B4D93615D6001");
 
                     b.HasIndex("Idpermission");
 
                     b.HasIndex("Idworkflow");
 
                     b.ToTable("CONDITION", (string)null);
+                });
+
+            modelBuilder.Entity("Task_Manager_Beta.Data.Listtemplate", b =>
+                {
+                    b.Property<int>("IdlistTemplate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("IDListTemplate");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdlistTemplate"));
+
+                    b.Property<int>("Idtemplate")
+                        .HasColumnType("int")
+                        .HasColumnName("IDTemplate");
+
+                    b.Property<string>("StatusName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("IdlistTemplate")
+                        .HasName("PK__LISTTEMP__55547DE54957B17C");
+
+                    b.HasIndex("Idtemplate");
+
+                    b.ToTable("LISTTEMPLATE", (string)null);
                 });
 
             modelBuilder.Entity("Task_Manager_Beta.Data.Member", b =>
@@ -92,7 +117,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnName("IDUser");
 
                     b.HasKey("Idmember")
-                        .HasName("PK__MEMBER__7EB75A63D92FB36D");
+                        .HasName("PK__MEMBER__7EB75A63B9ADC7C1");
 
                     b.HasIndex("Idproject");
 
@@ -128,7 +153,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Idpermission")
-                        .HasName("PK__PERMISSS__0553C49AB4E77293");
+                        .HasName("PK__PERMISSS__0553C49A071A4B4F");
 
                     b.HasIndex("Idproject");
 
@@ -164,7 +189,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Idproject")
-                        .HasName("PK__PROJECT__B0529955CFDF06BE");
+                        .HasName("PK__PROJECT__B0529955FD19BFEF");
 
                     b.ToTable("PROJECT", (string)null);
                 });
@@ -178,16 +203,18 @@ namespace Task_Manager_Beta.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idstatus"));
 
+                    b.Property<int>("Idproject")
+                        .HasColumnType("int")
+                        .HasColumnName("IDProject");
+
                     b.Property<string>("StatusName")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Idstatus")
-                        .HasName("PK__STATUS__8DA245106739C773");
+                        .HasName("PK__STATUS__8DA24510AF0F9F38");
 
-                    b.HasIndex(new[] { "StatusName" }, "UQ__STATUS__05E7698A81D61DE0")
-                        .IsUnique()
-                        .HasFilter("[StatusName] IS NOT NULL");
+                    b.HasIndex("Idproject");
 
                     b.ToTable("STATUS", (string)null);
                 });
@@ -226,7 +253,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Idtask")
-                        .HasName("PK__TASK__BCC3A1F92D2AF717");
+                        .HasName("PK__TASK__BCC3A1F9504858B2");
 
                     b.HasIndex("Idproject");
 
@@ -249,7 +276,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Idtask")
-                        .HasName("PK__TASKDETA__BCC3A1F9F0F81026");
+                        .HasName("PK__TASKDETA__BCC3A1F9E297B0EB");
 
                     b.ToTable("TASKDETAILS", (string)null);
                 });
@@ -263,20 +290,16 @@ namespace Task_Manager_Beta.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idtemplate"));
 
-                    b.Property<int>("Idproject")
-                        .HasColumnType("int")
-                        .HasColumnName("IDProject");
-
-                    b.Property<int>("Idstatus")
-                        .HasColumnType("int")
-                        .HasColumnName("IDStatus");
+                    b.Property<string>("TemplateName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Idtemplate")
-                        .HasName("PK__TEMPLATE__AB4388EFDD927C1E");
+                        .HasName("PK__TEMPLATE__AB4388EFB0D1E74B");
 
-                    b.HasIndex("Idproject");
-
-                    b.HasIndex("Idstatus");
+                    b.HasIndex(new[] { "TemplateName" }, "UQ__TEMPLATE__A6C2DA6656661883")
+                        .IsUnique()
+                        .HasFilter("[TemplateName] IS NOT NULL");
 
                     b.ToTable("TEMPLATE", (string)null);
                 });
@@ -289,6 +312,10 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnName("IDUser");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Iduser"));
+
+                    b.Property<string>("Avatar")
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(max)");
 
                     b.Property<string>("Email")
                         .HasMaxLength(50)
@@ -307,7 +334,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Iduser")
-                        .HasName("PK__USER__EAE6D9DF10325B4D");
+                        .HasName("PK__USER__EAE6D9DFA1CC6D4F");
 
                     b.ToTable("USER", (string)null);
                 });
@@ -329,7 +356,7 @@ namespace Task_Manager_Beta.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Idworkflow")
-                        .HasName("PK__WORKFLOW__7D45E40AA14ADF65");
+                        .HasName("PK__WORKFLOW__7D45E40A469AE309");
 
                     b.HasIndex("Idstatus");
 
@@ -342,13 +369,13 @@ namespace Task_Manager_Beta.Migrations
                         .WithMany("Assignments")
                         .HasForeignKey("Idtask")
                         .IsRequired()
-                        .HasConstraintName("FK__ASSIGNMEN__IDTas__6383C8BA");
+                        .HasConstraintName("FK__ASSIGNMEN__IDTas__656C112C");
 
                     b.HasOne("Task_Manager_Beta.Data.User", "IduserNavigation")
                         .WithMany("Assignments")
                         .HasForeignKey("Iduser")
                         .IsRequired()
-                        .HasConstraintName("FK__ASSIGNMEN__IDUse__628FA481");
+                        .HasConstraintName("FK__ASSIGNMEN__IDUse__6477ECF3");
 
                     b.Navigation("IdtaskNavigation");
 
@@ -361,17 +388,28 @@ namespace Task_Manager_Beta.Migrations
                         .WithMany("Conditions")
                         .HasForeignKey("Idpermission")
                         .IsRequired()
-                        .HasConstraintName("FK__CONDITION__IDPer__6754599E");
+                        .HasConstraintName("FK__CONDITION__IDPer__693CA210");
 
                     b.HasOne("Task_Manager_Beta.Data.Workflow", "IdworkflowNavigation")
                         .WithMany("Conditions")
                         .HasForeignKey("Idworkflow")
                         .IsRequired()
-                        .HasConstraintName("FK__CONDITION__IDWor__68487DD7");
+                        .HasConstraintName("FK__CONDITION__IDWor__6A30C649");
 
                     b.Navigation("IdpermissionNavigation");
 
                     b.Navigation("IdworkflowNavigation");
+                });
+
+            modelBuilder.Entity("Task_Manager_Beta.Data.Listtemplate", b =>
+                {
+                    b.HasOne("Task_Manager_Beta.Data.Template", "IdtemplateNavigation")
+                        .WithMany("Listtemplates")
+                        .HasForeignKey("Idtemplate")
+                        .IsRequired()
+                        .HasConstraintName("FK__LISTTEMPL__IDTem__6B24EA82");
+
+                    b.Navigation("IdtemplateNavigation");
                 });
 
             modelBuilder.Entity("Task_Manager_Beta.Data.Member", b =>
@@ -380,13 +418,13 @@ namespace Task_Manager_Beta.Migrations
                         .WithMany("Members")
                         .HasForeignKey("Idproject")
                         .IsRequired()
-                        .HasConstraintName("FK__MEMBER__IDProjec__619B8048");
+                        .HasConstraintName("FK__MEMBER__IDProjec__6383C8BA");
 
                     b.HasOne("Task_Manager_Beta.Data.User", "IduserNavigation")
                         .WithMany("Members")
                         .HasForeignKey("Iduser")
                         .IsRequired()
-                        .HasConstraintName("FK__MEMBER__IDUser__60A75C0F");
+                        .HasConstraintName("FK__MEMBER__IDUser__628FA481");
 
                     b.Navigation("IdprojectNavigation");
 
@@ -399,17 +437,28 @@ namespace Task_Manager_Beta.Migrations
                         .WithMany("Permisssions")
                         .HasForeignKey("Idproject")
                         .IsRequired()
-                        .HasConstraintName("FK__PERMISSSI__IDPro__656C112C");
+                        .HasConstraintName("FK__PERMISSSI__IDPro__6754599E");
 
                     b.HasOne("Task_Manager_Beta.Data.User", "IduserNavigation")
                         .WithMany("Permisssions")
                         .HasForeignKey("Iduser")
                         .IsRequired()
-                        .HasConstraintName("FK__PERMISSSI__IDUse__6477ECF3");
+                        .HasConstraintName("FK__PERMISSSI__IDUse__66603565");
 
                     b.Navigation("IdprojectNavigation");
 
                     b.Navigation("IduserNavigation");
+                });
+
+            modelBuilder.Entity("Task_Manager_Beta.Data.Status", b =>
+                {
+                    b.HasOne("Task_Manager_Beta.Data.Project", "IdprojectNavigation")
+                        .WithMany("Statuses")
+                        .HasForeignKey("Idproject")
+                        .IsRequired()
+                        .HasConstraintName("FK__STATUS__IDProjec__6C190EBB");
+
+                    b.Navigation("IdprojectNavigation");
                 });
 
             modelBuilder.Entity("Task_Manager_Beta.Data.Task", b =>
@@ -418,13 +467,13 @@ namespace Task_Manager_Beta.Migrations
                         .WithMany("Tasks")
                         .HasForeignKey("Idproject")
                         .IsRequired()
-                        .HasConstraintName("FK__TASK__IDProject__5DCAEF64");
+                        .HasConstraintName("FK__TASK__IDProject__5FB337D6");
 
                     b.HasOne("Task_Manager_Beta.Data.Status", "IdstatusNavigation")
                         .WithMany("Tasks")
                         .HasForeignKey("Idstatus")
                         .IsRequired()
-                        .HasConstraintName("FK__TASK__IDStatus__5EBF139D");
+                        .HasConstraintName("FK__TASK__IDStatus__60A75C0F");
 
                     b.Navigation("IdprojectNavigation");
 
@@ -437,28 +486,9 @@ namespace Task_Manager_Beta.Migrations
                         .WithOne("Taskdetail")
                         .HasForeignKey("Task_Manager_Beta.Data.Taskdetail", "Idtask")
                         .IsRequired()
-                        .HasConstraintName("FK__TASKDETAI__IDTas__5FB337D6");
+                        .HasConstraintName("FK__TASKDETAI__IDTas__619B8048");
 
                     b.Navigation("IdtaskNavigation");
-                });
-
-            modelBuilder.Entity("Task_Manager_Beta.Data.Template", b =>
-                {
-                    b.HasOne("Task_Manager_Beta.Data.Project", "IdprojectNavigation")
-                        .WithMany("Templates")
-                        .HasForeignKey("Idproject")
-                        .IsRequired()
-                        .HasConstraintName("FK__TEMPLATE__IDProj__693CA210");
-
-                    b.HasOne("Task_Manager_Beta.Data.Status", "IdstatusNavigation")
-                        .WithMany("Templates")
-                        .HasForeignKey("Idstatus")
-                        .IsRequired()
-                        .HasConstraintName("FK__TEMPLATE__IDStat__6A30C649");
-
-                    b.Navigation("IdprojectNavigation");
-
-                    b.Navigation("IdstatusNavigation");
                 });
 
             modelBuilder.Entity("Task_Manager_Beta.Data.Workflow", b =>
@@ -467,7 +497,7 @@ namespace Task_Manager_Beta.Migrations
                         .WithMany("Workflows")
                         .HasForeignKey("Idstatus")
                         .IsRequired()
-                        .HasConstraintName("FK__WORKFLOW__IDStat__66603565");
+                        .HasConstraintName("FK__WORKFLOW__IDStat__68487DD7");
 
                     b.Navigation("IdstatusNavigation");
                 });
@@ -483,16 +513,14 @@ namespace Task_Manager_Beta.Migrations
 
                     b.Navigation("Permisssions");
 
-                    b.Navigation("Tasks");
+                    b.Navigation("Statuses");
 
-                    b.Navigation("Templates");
+                    b.Navigation("Tasks");
                 });
 
             modelBuilder.Entity("Task_Manager_Beta.Data.Status", b =>
                 {
                     b.Navigation("Tasks");
-
-                    b.Navigation("Templates");
 
                     b.Navigation("Workflows");
                 });
@@ -502,6 +530,11 @@ namespace Task_Manager_Beta.Migrations
                     b.Navigation("Assignments");
 
                     b.Navigation("Taskdetail");
+                });
+
+            modelBuilder.Entity("Task_Manager_Beta.Data.Template", b =>
+                {
+                    b.Navigation("Listtemplates");
                 });
 
             modelBuilder.Entity("Task_Manager_Beta.Data.User", b =>

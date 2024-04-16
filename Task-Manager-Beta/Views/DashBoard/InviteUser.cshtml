@@ -1,0 +1,11 @@
+﻿@model Task_Manager_Beta.ViewModels.InviteUserViewModel
+
+<h2>Mời người dùng tham gia dự án</h2>
+
+<form asp-action="InviteUser" method="post">
+    <div class="form-group">
+        <label for="UserEmail">Email của người dùng</label>
+        <input type="email" asp-for="UserEmail" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Gửi lời mời</button>
+</form>

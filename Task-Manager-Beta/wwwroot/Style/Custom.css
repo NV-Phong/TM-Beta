@@ -9,7 +9,13 @@
     border-radius: 10px;
     border: none;
     box-shadow: 10px 10px 99px #54545426, 20px 20px 99px #54545426;
-    background: linear-gradient(180deg, rgb(229.51, 229.51, 229.51) 0%, rgb(255, 255, 255) 100%);
+/*    background: linear-gradient(180deg, rgb(229.51, 229.51, 229.51) 0%, rgb(255, 255, 255) 100%);*/
+
+
+   
+}
+.fixcard {
+        width:333px;
 }
 
 .card:hover {
@@ -48,3 +54,24 @@ body {
     text-align:left;
 }
 
+.btnpd
+{
+    margin-top:10px;
+
+}
+.loginn >*
+{
+    display:inline-block;
+    margin-left: 10px;
+}
+
+.row
+{
+    justify-content:center;
+}
+
+.btnl
+{
+    border:none;
+    background:none;
+}

@@ -13,7 +13,7 @@ namespace Task_Manager_Beta.Controllers
             _logger = logger;
         }
 
-        public IActionResult LandingPage()
+        public IActionResult LandingPage()  
         {
             return View();
         }

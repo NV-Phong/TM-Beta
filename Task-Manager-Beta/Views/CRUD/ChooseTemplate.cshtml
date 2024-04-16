@@ -1,0 +1,44 @@
+﻿@model Task_Manager_Beta.ViewModels.DashBoardViewModel
+@{
+    ViewData["Title"] = "ChooseTemplate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 0;
+}
+
+<h1>ChooseTemplate</h1>
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var template in Model.Templates)
+        {   
+            <div class="col-md-3 g-3 customcard">
+                <a class="fix btn" asp-action="LoadTemplate" asp-route-idtemplate="@template.Idtemplate">
+                    <div class="card">
+                        <div class="card-body">
+                        
+                            <p class="card-text"> <strong>ID Template:</strong>@template.Idtemplate</p>
+                            <p class="card-text"><strong>Template Name:</strong>@template.TemplateName</p>
+                        
+                        </div>
+                    </div>
+                </a>
+            </div>
+            if (++count % 4 == 0)
+            {
+            @:</div><div class="row">
+            }
+        }
+
+            <div class="col-md-3 g-3 customcard">
+                <a class="fix btn" asp-controller="DashBoard" asp-action="Project">
+                    <div class="card">
+                        <div class="card-body">
+                        
+                            <p class="card-text"><strong>Template Name:</strong>Blank Template</p>
+                        
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </div>
+</div>

@@ -1,22 +1,23 @@
-﻿@model IEnumerable<Task_Manager_Beta.Data.Project>
+﻿@model Task_Manager_Beta.ViewModels.DashBoardViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "DashBoard";
     Layout = "~/Views/Shared/_Layout.cshtml";
     int count = 0;
 }
 
-<h1>List Project</h1>
 
-<a class="btn btn-custom-green border-1 border-custom-dark" href="@Url.Action("Create")">Create</a>
 
+<h1>My Project</h1>
+
+<a class="btn btn-custom-green border-1 border-custom-dark" asp-controller="CRUD" asp-action="CreateProject" >Create Project</a>
+<a class="btn btn-custom-green border-1 border-custom-dark" asp-controller="Calendar" asp-action="Calendar" >My Task</a>
 <div class="container mt-4">
-    <div class="row justify-content-center">
-        @foreach (var item in Model)
+    <div class="row">
+        @foreach (var item in Model.Projects)
         {   
             <div class="col-md-3 g-3 customcard">
-                <a class="fix btn" asp-controller="Projects" asp-route-id="@item.Idproject">
-                <a class="fix btn" asp-controller="Projects" asp-action="DashBoard" asp-route-id="@item.Idproject">
+                <a class="fix btn" asp-controller="DashBoard" asp-action="Project" asp-route-idproject="@item.Idproject">
                     <div class="card">
                         <div class="card-body">
                         
@@ -24,17 +25,20 @@
                             <p class="card-text"><strong>Tên Project:</strong> @Html.DisplayFor(modelItem => item.ProjectName)</p>
                             <p class="card-text"> <strong>DayCreate:</strong> @Html.DisplayFor(modelItem => item.DayCreate)</p>
                             <p class="card-text"> <strong>Image:</strong> @Html.DisplayFor(modelItem => item.Image)</p>
-                            <p class="card-text"> <strong>Hide:</strong> @Html.DisplayFor(modelItem => item.Hide)</p>
+                            <p class="card-text" style="display:none"> <strong>Hide:</strong> @Html.DisplayFor(modelItem => item.Hide)</p>
                         
                             <div class="d-flex justify-content-center">
-                                <a class="btn" asp-action="Edit" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/edit.svg" alt="Alternate Text" />Edit</a>
+                                @* <a class="btn" asp-action="Edit" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/edit.svg" alt="Alternate Text" />Edit</a>
                                 <a class="btn" asp-action="Details" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/details.svg" alt="Alternate Text" />Details</a>
-                                <a class="btn" asp-action="Delete" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/delete.svg" alt="Alternate Text" />Delete</a>
+                                <a class="btn" asp-action="Delete" asp-route-id="@item.Idproject"><img class="p-2" src="~/Graphics/delete.svg" alt="Alternate Text" />Delete</a> *@
+
+                                <a class="btn btn-custom-green border-1 border-custom-dark" asp-action="InviteUser" asp-route-id="@item.Idproject">Invite</a>
+
 
                             </div>
                         </div>
                     </div>
-                </a></a>
+                </a>
             </div>
             if (++count % 4 == 0)
             {

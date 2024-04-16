@@ -5,6 +5,7 @@ Install-Package Microsoft.EntityframeworkCore.Tools
 
 MAR03\SQLEXPRESS
 
+<p>ID: @TempData["ID"]</p> <!-- Truy cập giá trị ID trong view -->
 
 base(global::System.Configuration.ConfigurationManager.ConnectionStrings["NhaSachConnectionString"].ConnectionString, mappingSource)
         

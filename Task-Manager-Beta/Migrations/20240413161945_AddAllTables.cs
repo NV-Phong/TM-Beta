@@ -25,20 +25,20 @@ namespace Task_Manager_Beta.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__PROJECT__B0529955CFDF06BE", x => x.IDProject);
+                    table.PrimaryKey("PK__PROJECT__B0529955FD19BFEF", x => x.IDProject);
                 });
 
             migrationBuilder.CreateTable(
-                name: "STATUS",
+                name: "TEMPLATE",
                 columns: table => new
                 {
-                    IDStatus = table.Column<int>(type: "int", nullable: false)
+                    IDTemplate = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    StatusName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
+                    TemplateName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__STATUS__8DA245106739C773", x => x.IDStatus);
+                    table.PrimaryKey("PK__TEMPLATE__AB4388EFB0D1E74B", x => x.IDTemplate);
                 });
 
             migrationBuilder.CreateTable(
@@ -50,83 +50,50 @@ namespace Task_Manager_Beta.Migrations
                     UserName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Email = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
                     Password = table.Column<string>(type: "varchar(max)", unicode: false, nullable: true),
+                    Avatar = table.Column<string>(type: "varchar(max)", unicode: false, nullable: true),
                     Hide = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__USER__EAE6D9DF10325B4D", x => x.IDUser);
+                    table.PrimaryKey("PK__USER__EAE6D9DFA1CC6D4F", x => x.IDUser);
                 });
 
             migrationBuilder.CreateTable(
-                name: "TASK",
+                name: "STATUS",
                 columns: table => new
                 {
-                    IDTask = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IDProject = table.Column<int>(type: "int", nullable: false),
-                    IDStatus = table.Column<int>(type: "int", nullable: false),
-                    TaskName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    DayCreate = table.Column<DateTime>(type: "datetime", nullable: true),
-                    DayStart = table.Column<DateTime>(type: "datetime", nullable: true),
-                    Deadline = table.Column<DateTime>(type: "datetime", nullable: true),
-                    Hide = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK__TASK__BCC3A1F92D2AF717", x => x.IDTask);
-                    table.ForeignKey(
-                        name: "FK__TASK__IDProject__5DCAEF64",
-                        column: x => x.IDProject,
-                        principalTable: "PROJECT",
-                        principalColumn: "IDProject");
-                    table.ForeignKey(
-                        name: "FK__TASK__IDStatus__5EBF139D",
-                        column: x => x.IDStatus,
-                        principalTable: "STATUS",
-                        principalColumn: "IDStatus");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "TEMPLATE",
-                columns: table => new
-                {
-                    IDTemplate = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IDProject = table.Column<int>(type: "int", nullable: false),
                     IDStatus = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IDProject = table.Column<int>(type: "int", nullable: false),
+                    StatusName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__TEMPLATE__AB4388EFDD927C1E", x => x.IDTemplate);
+                    table.PrimaryKey("PK__STATUS__8DA24510AF0F9F38", x => x.IDStatus);
                     table.ForeignKey(
-                        name: "FK__TEMPLATE__IDProj__693CA210",
+                        name: "FK__STATUS__IDProjec__6C190EBB",
                         column: x => x.IDProject,
                         principalTable: "PROJECT",
                         principalColumn: "IDProject");
-                    table.ForeignKey(
-                        name: "FK__TEMPLATE__IDStat__6A30C649",
-                        column: x => x.IDStatus,
-                        principalTable: "STATUS",
-                        principalColumn: "IDStatus");
                 });
 
             migrationBuilder.CreateTable(
-                name: "WORKFLOW",
+                name: "LISTTEMPLATE",
                 columns: table => new
                 {
-                    IDWorkflow = table.Column<int>(type: "int", nullable: false)
+                    IDListTemplate = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    IDStatus = table.Column<int>(type: "int", nullable: false),
-                    Transition = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    IDTemplate = table.Column<int>(type: "int", nullable: false),
+                    StatusName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__WORKFLOW__7D45E40AA14ADF65", x => x.IDWorkflow);
+                    table.PrimaryKey("PK__LISTTEMP__55547DE54957B17C", x => x.IDListTemplate);
                     table.ForeignKey(
-                        name: "FK__WORKFLOW__IDStat__66603565",
-                        column: x => x.IDStatus,
-                        principalTable: "STATUS",
-                        principalColumn: "IDStatus");
+                        name: "FK__LISTTEMPL__IDTem__6B24EA82",
+                        column: x => x.IDTemplate,
+                        principalTable: "TEMPLATE",
+                        principalColumn: "IDTemplate");
                 });
 
             migrationBuilder.CreateTable(
@@ -140,14 +107,14 @@ namespace Task_Manager_Beta.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__MEMBER__7EB75A63D92FB36D", x => x.IDMember);
+                    table.PrimaryKey("PK__MEMBER__7EB75A63B9ADC7C1", x => x.IDMember);
                     table.ForeignKey(
-                        name: "FK__MEMBER__IDProjec__619B8048",
+                        name: "FK__MEMBER__IDProjec__6383C8BA",
                         column: x => x.IDProject,
                         principalTable: "PROJECT",
                         principalColumn: "IDProject");
                     table.ForeignKey(
-                        name: "FK__MEMBER__IDUser__60A75C0F",
+                        name: "FK__MEMBER__IDUser__628FA481",
                         column: x => x.IDUser,
                         principalTable: "USER",
                         principalColumn: "IDUser");
@@ -167,17 +134,65 @@ namespace Task_Manager_Beta.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__PERMISSS__0553C49AB4E77293", x => x.IDPermission);
+                    table.PrimaryKey("PK__PERMISSS__0553C49A071A4B4F", x => x.IDPermission);
                     table.ForeignKey(
-                        name: "FK__PERMISSSI__IDPro__656C112C",
+                        name: "FK__PERMISSSI__IDPro__6754599E",
                         column: x => x.IDProject,
                         principalTable: "PROJECT",
                         principalColumn: "IDProject");
                     table.ForeignKey(
-                        name: "FK__PERMISSSI__IDUse__6477ECF3",
+                        name: "FK__PERMISSSI__IDUse__66603565",
                         column: x => x.IDUser,
                         principalTable: "USER",
                         principalColumn: "IDUser");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TASK",
+                columns: table => new
+                {
+                    IDTask = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IDProject = table.Column<int>(type: "int", nullable: false),
+                    IDStatus = table.Column<int>(type: "int", nullable: false),
+                    TaskName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    DayCreate = table.Column<DateTime>(type: "datetime", nullable: true),
+                    DayStart = table.Column<DateTime>(type: "datetime", nullable: true),
+                    Deadline = table.Column<DateTime>(type: "datetime", nullable: true),
+                    Hide = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK__TASK__BCC3A1F9504858B2", x => x.IDTask);
+                    table.ForeignKey(
+                        name: "FK__TASK__IDProject__5FB337D6",
+                        column: x => x.IDProject,
+                        principalTable: "PROJECT",
+                        principalColumn: "IDProject");
+                    table.ForeignKey(
+                        name: "FK__TASK__IDStatus__60A75C0F",
+                        column: x => x.IDStatus,
+                        principalTable: "STATUS",
+                        principalColumn: "IDStatus");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "WORKFLOW",
+                columns: table => new
+                {
+                    IDWorkflow = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IDStatus = table.Column<int>(type: "int", nullable: false),
+                    Transition = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK__WORKFLOW__7D45E40A469AE309", x => x.IDWorkflow);
+                    table.ForeignKey(
+                        name: "FK__WORKFLOW__IDStat__68487DD7",
+                        column: x => x.IDStatus,
+                        principalTable: "STATUS",
+                        principalColumn: "IDStatus");
                 });
 
             migrationBuilder.CreateTable(
@@ -191,14 +206,14 @@ namespace Task_Manager_Beta.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__ASSIGNME__612AE3C08133FCF6", x => new { x.IDUser, x.IDTask });
+                    table.PrimaryKey("PK__ASSIGNME__612AE3C007018D2B", x => new { x.IDUser, x.IDTask });
                     table.ForeignKey(
-                        name: "FK__ASSIGNMEN__IDTas__6383C8BA",
+                        name: "FK__ASSIGNMEN__IDTas__656C112C",
                         column: x => x.IDTask,
                         principalTable: "TASK",
                         principalColumn: "IDTask");
                     table.ForeignKey(
-                        name: "FK__ASSIGNMEN__IDUse__628FA481",
+                        name: "FK__ASSIGNMEN__IDUse__6477ECF3",
                         column: x => x.IDUser,
                         principalTable: "USER",
                         principalColumn: "IDUser");
@@ -214,9 +229,9 @@ namespace Task_Manager_Beta.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__TASKDETA__BCC3A1F9F0F81026", x => x.IDTask);
+                    table.PrimaryKey("PK__TASKDETA__BCC3A1F9E297B0EB", x => x.IDTask);
                     table.ForeignKey(
-                        name: "FK__TASKDETAI__IDTas__5FB337D6",
+                        name: "FK__TASKDETAI__IDTas__619B8048",
                         column: x => x.IDTask,
                         principalTable: "TASK",
                         principalColumn: "IDTask");
@@ -233,14 +248,14 @@ namespace Task_Manager_Beta.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__CONDITIO__452B4D93285C0699", x => x.IDCondition);
+                    table.PrimaryKey("PK__CONDITIO__452B4D93615D6001", x => x.IDCondition);
                     table.ForeignKey(
-                        name: "FK__CONDITION__IDPer__6754599E",
+                        name: "FK__CONDITION__IDPer__693CA210",
                         column: x => x.IDPermission,
                         principalTable: "PERMISSSION",
                         principalColumn: "IDPermission");
                     table.ForeignKey(
-                        name: "FK__CONDITION__IDWor__68487DD7",
+                        name: "FK__CONDITION__IDWor__6A30C649",
                         column: x => x.IDWorkflow,
                         principalTable: "WORKFLOW",
                         principalColumn: "IDWorkflow");
@@ -260,6 +275,11 @@ namespace Task_Manager_Beta.Migrations
                 name: "IX_CONDITION_IDWorkflow",
                 table: "CONDITION",
                 column: "IDWorkflow");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LISTTEMPLATE_IDTemplate",
+                table: "LISTTEMPLATE",
+                column: "IDTemplate");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MEMBER_IDProject",
@@ -282,11 +302,9 @@ namespace Task_Manager_Beta.Migrations
                 column: "IDUser");
 
             migrationBuilder.CreateIndex(
-                name: "UQ__STATUS__05E7698A81D61DE0",
+                name: "IX_STATUS_IDProject",
                 table: "STATUS",
-                column: "StatusName",
-                unique: true,
-                filter: "[StatusName] IS NOT NULL");
+                column: "IDProject");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TASK_IDProject",
@@ -299,14 +317,11 @@ namespace Task_Manager_Beta.Migrations
                 column: "IDStatus");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TEMPLATE_IDProject",
+                name: "UQ__TEMPLATE__A6C2DA6656661883",
                 table: "TEMPLATE",
-                column: "IDProject");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TEMPLATE_IDStatus",
-                table: "TEMPLATE",
-                column: "IDStatus");
+                column: "TemplateName",
+                unique: true,
+                filter: "[TemplateName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_WORKFLOW_IDStatus",
@@ -324,13 +339,13 @@ namespace Task_Manager_Beta.Migrations
                 name: "CONDITION");
 
             migrationBuilder.DropTable(
+                name: "LISTTEMPLATE");
+
+            migrationBuilder.DropTable(
                 name: "MEMBER");
 
             migrationBuilder.DropTable(
                 name: "TASKDETAILS");
-
-            migrationBuilder.DropTable(
-                name: "TEMPLATE");
 
             migrationBuilder.DropTable(
                 name: "PERMISSSION");
@@ -339,16 +354,19 @@ namespace Task_Manager_Beta.Migrations
                 name: "WORKFLOW");
 
             migrationBuilder.DropTable(
+                name: "TEMPLATE");
+
+            migrationBuilder.DropTable(
                 name: "TASK");
 
             migrationBuilder.DropTable(
                 name: "USER");
 
             migrationBuilder.DropTable(
-                name: "PROJECT");
+                name: "STATUS");
 
             migrationBuilder.DropTable(
-                name: "STATUS");
+                name: "PROJECT");
         }
     }
 }

@@ -1,55 +1,107 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Task_Manager_Beta;
 using Task_Manager_Beta.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//---------------------------------------------------------------------------------------//
+
+//----------------------------------------------------------------------------------------------------------------------------------//
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = "TaskManager";
+})
+.AddCookie("TaskManager", options =>
+{
+    options.Cookie.Name = "TaskManager";
+    options.LoginPath = "/User/Login";
+})
+.AddGoogle(options =>
+{
+    options.ClientId = "589004371769-94p5ornaaojva18pcf6hhi5b4kb83oba.apps.googleusercontent.com";
+    options.ClientSecret = "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";
+});
+
+//----------------------------------------------------------------------------------------------------------------------------------//
 
 builder.Services.AddDbContext<TaskManagerContext>
 (options => options.UseSqlServer
 (builder.Configuration.GetConnectionString("TaskManagerConnection")));
 
-//---------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------------------------------//
+
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+
+builder.Services.AddScoped<EmailService>();
+
+//----------------------------------------------------------------------------------------------------------------------------------//
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 
-// Add services to the container.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------//
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+//------------------------------//
 
+app.UseAuthentication();
+
+//------------------------------//
+
+app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapControllerRoute(
-        name: "dashboard",
-        pattern: "dashboard/{id?}",
-        defaults: new { controller = "Projects", action = "DashBoard" }
-    );
-
     app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=LandingPage}/{id?}");
+        name: "default",
+        pattern: "{controller=Home}/{action=LandingPage}/{id?}");
 
 });
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=LandingPage}/{id?}");
-
 app.Run();
 
+//----------------------------------------------------------------------------------------------------------------------------------//

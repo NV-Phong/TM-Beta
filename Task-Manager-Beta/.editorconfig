@@ -1,7 +1,13 @@
 ﻿[*.cs]
 
+# CS8605: Unboxing a possibly null value.
+dotnet_diagnostic.CS8605.severity = none
+
 # CS1998: Async method lacks 'await' operators and will run synchronously
 dotnet_diagnostic.CS1998.severity = none
+
+# CS8629: Nullable value type may be null.
+dotnet_diagnostic.CS8629.severity = none
 
 # ASP0014: Suggest using top level route registrations
 dotnet_diagnostic.ASP0014.severity = none

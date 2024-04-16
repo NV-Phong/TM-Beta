@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Task-Manager-Beta.bundle.scp.css"
     },
     {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Avt.png",
+      "PackagePath": "staticwebassets\\Graphics\\Avt.png"
+    },
+    {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Boss-Footer.png",
       "PackagePath": "staticwebassets\\Graphics\\Boss-Footer.png"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\add-circle.svg",
       "PackagePath": "staticwebassets\\Graphics\\add-circle.svg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\button-setting.svg",
+      "PackagePath": "staticwebassets\\Graphics\\button-setting.svg"
     },
     {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\center.svg",
@@ -77,10 +85,6 @@
       "PackagePath": "staticwebassets\\Graphics\\x.svg"
     },
     {
-      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\0dc82260b1b35b0b_6_the_empress (1).png",
-      "PackagePath": "staticwebassets\\Images\\0dc82260b1b35b0b_6_the_empress (1).png"
-    },
-    {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\1.jfif",
       "PackagePath": "staticwebassets\\Images\\1.jfif"
     },
@@ -105,8 +109,16 @@
       "PackagePath": "staticwebassets\\Images\\Book-3.jpg"
     },
     {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Ellipse 858.png",
+      "PackagePath": "staticwebassets\\Images\\Ellipse 858.png"
+    },
+    {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\S.jpg",
       "PackagePath": "staticwebassets\\Images\\S.jpg"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\avt.png",
+      "PackagePath": "staticwebassets\\Images\\avt.png"
     },
     {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\DashBoard.js",
@@ -229,6 +241,10 @@
       "PackagePath": "staticwebassets\\Style\\DashBoard.css.map"
     },
     {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\LandingPage.css",
+      "PackagePath": "staticwebassets\\Style\\LandingPage.css"
+    },
+    {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Style.css",
       "PackagePath": "staticwebassets\\Style\\Style.css"
     },
@@ -239,6 +255,10 @@
     {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Style.scss",
       "PackagePath": "staticwebassets\\Style\\Style.scss"
+    },
+    {
+      "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Tab.css",
+      "PackagePath": "staticwebassets\\Style\\Tab.css"
     },
     {
       "Id": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\css\\bootstrap-grid.css",

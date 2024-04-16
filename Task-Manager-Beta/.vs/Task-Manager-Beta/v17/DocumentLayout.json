@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\Task Manager\\Task-Manager-Beta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\task manager\\task-manager-beta\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\task manager\\task-manager-beta\\views\\projects\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:views\\projects\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\task manager\\task-manager-beta\\wwwroot\\scripts\\dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:wwwroot\\scripts\\dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A287E072-8CEB-4143-BA31-DBE215E392BB}|Task-Manager-Beta.csproj|d:\\task manager\\task-manager-beta\\controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A287E072-8CEB-4143-BA31-DBE215E392BB}|Task-Manager-Beta.csproj|solutionrelative:controllers\\crudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DashBoard.js",
-              "DocumentMoniker": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\DashBoard.js",
-              "RelativeDocumentMoniker": "wwwroot\\Scripts\\DashBoard.js",
-              "ToolTip": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Scripts\\DashBoard.js",
-              "RelativeToolTip": "wwwroot\\Scripts\\DashBoard.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-06T17:59:11.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProjectsController.cs",
-              "DocumentMoniker": "D:\\Task Manager\\Task-Manager-Beta\\Controllers\\ProjectsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
-              "ToolTip": "D:\\Task Manager\\Task-Manager-Beta\\Controllers\\ProjectsController.cs",
-              "RelativeToolTip": "Controllers\\ProjectsController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCMAAAAAAAAA",
+              "Title": "CRUDController.cs",
+              "DocumentMoniker": "D:\\Task Manager\\Task-Manager-Beta\\Controllers\\CRUDController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CRUDController.cs",
+              "ToolTip": "D:\\Task Manager\\Task-Manager-Beta\\Controllers\\CRUDController.cs",
+              "RelativeToolTip": "Controllers\\CRUDController.cs",
+              "ViewState": "AQIAAN4AAAAAAAAAAAAiwPkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T16:48:15.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DashBoard.cshtml",
-              "DocumentMoniker": "D:\\Task Manager\\Task-Manager-Beta\\Views\\Projects\\DashBoard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Projects\\DashBoard.cshtml",
-              "ToolTip": "D:\\Task Manager\\Task-Manager-Beta\\Views\\Projects\\DashBoard.cshtml",
-              "RelativeToolTip": "Views\\Projects\\DashBoard.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAACEAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-06T15:59:08.514Z",
+              "WhenOpened": "2024-04-16T04:38:43.343Z",
               "EditorCaption": ""
             }
           ]

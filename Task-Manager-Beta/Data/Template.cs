@@ -7,11 +7,7 @@ public partial class Template
 {
     public int Idtemplate { get; set; }
 
-    public int Idproject { get; set; }
+    public string? TemplateName { get; set; }
 
-    public int Idstatus { get; set; }
-
-    public virtual Project IdprojectNavigation { get; set; } = null!;
-
-    public virtual Status IdstatusNavigation { get; set; } = null!;
+    public virtual ICollection<Listtemplate> Listtemplates { get; set; } = new List<Listtemplate>();
 }

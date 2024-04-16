@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GrG2q9X4RW4GxitYwFJYtEnt5lZlWNLCJl7xQTH761Y=",
+  "Hash": "9sNZv6MpEQJ4UB9PGKhNjLuoTZHoA8+0JHU12aHVwZE=",
   "Source": "Task-Manager-Beta",
   "BasePath": "_content/Task-Manager-Beta",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot\\Graphics\\add-circle.svg"
     },
     {
+      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Avt.png",
+      "SourceId": "Task-Manager-Beta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
+      "BasePath": "_content/Task-Manager-Beta",
+      "RelativePath": "Graphics/Avt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Graphics\\Avt.png"
+    },
+    {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\Boss-Footer.png",
       "SourceId": "Task-Manager-Beta",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Graphics\\Boss-Footer.svg"
+    },
+    {
+      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\button-setting.svg",
+      "SourceId": "Task-Manager-Beta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
+      "BasePath": "_content/Task-Manager-Beta",
+      "RelativePath": "Graphics/button-setting.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Graphics\\button-setting.svg"
     },
     {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Graphics\\center.svg",
@@ -397,25 +435,6 @@
       "OriginalItemSpec": "wwwroot\\Graphics\\x.svg"
     },
     {
-      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\0dc82260b1b35b0b_6_the_empress (1).png",
-      "SourceId": "Task-Manager-Beta",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
-      "BasePath": "_content/Task-Manager-Beta",
-      "RelativePath": "Images/0dc82260b1b35b0b_6_the_empress (1).png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\0dc82260b1b35b0b_6_the_empress (1).png"
-    },
-    {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\1.jfif",
       "SourceId": "Task-Manager-Beta",
       "SourceType": "Discovered",
@@ -473,6 +492,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\Alice.jpg"
     },
     {
+      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\avt.png",
+      "SourceId": "Task-Manager-Beta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
+      "BasePath": "_content/Task-Manager-Beta",
+      "RelativePath": "Images/avt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\avt.png"
+    },
+    {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Book-1.jpg",
       "SourceId": "Task-Manager-Beta",
       "SourceType": "Discovered",
@@ -528,6 +566,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Book-3.jpg"
+    },
+    {
+      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\Ellipse 858.png",
+      "SourceId": "Task-Manager-Beta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
+      "BasePath": "_content/Task-Manager-Beta",
+      "RelativePath": "Images/Ellipse 858.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Ellipse 858.png"
     },
     {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Images\\S.jpg",
@@ -1953,6 +2010,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Style\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\LandingPage.css",
+      "SourceId": "Task-Manager-Beta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
+      "BasePath": "_content/Task-Manager-Beta",
+      "RelativePath": "Style/LandingPage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Style\\LandingPage.css"
     },
     {
       "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\scss\\_accordion.scss",
@@ -3910,6 +3986,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Style\\Style.scss"
+    },
+    {
+      "Identity": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\Style\\Tab.css",
+      "SourceId": "Task-Manager-Beta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Task Manager\\Task-Manager-Beta\\wwwroot\\",
+      "BasePath": "_content/Task-Manager-Beta",
+      "RelativePath": "Style/Tab.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Style\\Tab.css"
     }
   ]
 }

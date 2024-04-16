@@ -7,11 +7,13 @@ public partial class Status
 {
     public int Idstatus { get; set; }
 
+    public int Idproject { get; set; }
+
     public string? StatusName { get; set; }
 
-    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
+    public virtual Project IdprojectNavigation { get; set; } = null!;
 
-    public virtual ICollection<Template> Templates { get; set; } = new List<Template>();
+    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
 
     public virtual ICollection<Workflow> Workflows { get; set; } = new List<Workflow>();
 }

@@ -1,0 +1,187 @@
+﻿@model Task_Manager_Beta.ViewModels.DashBoardViewModel
+@{
+    ViewData["Title"] = "Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var iduser = @User.FindFirst("UserId")?.Value;
+}
+
+<a asp-action="ProjectSetting" asp-route-idproject="@TempData["IDPROJECT"]">
+    <img class="navbutton" src="~/Graphics/button-setting.svg" alt="Alternate Text" />
+</a>
+
+<div class='app'>
+
+    <main class='project'>
+
+        <div class='project-info'>
+            <a asp-action="DashBoard" asp-controller="DashBoard" asp-route-iduser="@User.FindFirst("UserId")?.Value" class="btn btn-custom-green border-1 border-custom-dark">« Back to List »</a>
+            @* <a class="btn btn-custom-green border-1 border-custom-dark" asp-action="InviteUser" asp-route-idproject="@TempData["IDPROJECT"]">Invite Member</a> *@
+
+            <h1>DashBoard</h1>
+
+
+            <div class='project-participants'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button class='project-participants__add'>Add Participant</button>
+
+            </div>
+
+            <a class="btn btn-custom-green border-1 border-custom-dark" asp-controller="CRUD" asp-action="CreateTask" asp-route-idproject="@TempData["IDPROJECT"]" asp-route-idstatus="@TempData["IDSTATUS"]">Create Task</a>
+
+
+            <a class="btn btn-custom-green border-1 border-custom-dark" asp-controller="CRUD" asp-action="CreateStatus" asp-route-idproject="@TempData["IDPROJECT"]">Create Status</a>
+
+
+        </div>
+
+
+        <div class='project-tasks'>
+
+            @foreach (var status in Model.Status)
+            {
+
+                <div class='project-column'>
+                    <div class='project-column-heading'>
+                        <h2 class='project-column-heading__title'>@status.StatusName</h2><button class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+
+
+                        @* <h2 class='project-column-heading__id'>@status.Idstatus</h2> *@
+
+                        @* <a class="btn btn-custom-green border-1 border-custom-dark" href="/Status/Create/?idproject=@status.Idproject">Add Status</a> *@
+                    </div>
+                    @*                         <a class="btn btn-custom-green border-1 border-custom-dark" href="/Tasks/Create/?idproject=@status.Idproject&idstatus=@status.Idstatus">Create</a> *@
+                    <div class='droppp'>
+
+                        @foreach (var task in Model.Tasks)
+                        {
+                            if (@status.Idstatus == @task.Idstatus)
+                            {
+                                <a class="text-decoration-none text-custom-dark" asp-controller="Tasks" asp-action="Details" asp-route-id="@task.Idtask">
+                                    <div class='task' draggable='true' data-task-id="@task.Idtask" data-idproject="@task.Idproject">
+                                        <div class='task__tags'><span class='task__tag task__tag--copyright'>Tag</span><button class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                                        <p>@task.TaskName</p>
+                                        <div class='task__stats'>
+                                            <div>
+                                                <strong>Ngày Tạo:</strong>
+                                                <span>@task.DayCreate</span>
+                                            </div>
+                                            <div>
+                                                <strong>Hạn Chót:</strong>
+                                                <span>@task.Deadline</span>
+                                            </div>
+                                            <div style="display:none">
+                                                <strong>Trạng Thái:</strong>
+                                                <span class="status-name">@task.IdstatusNavigation.StatusName</span>
+                                            </div>
+                                            @* <a id="acceptTaskBtn" class="btn btn-custom-green border-1 border-custom-dark" href="/Tasks/AcceptTask/?iduser=@User.FindFirst("UserId")?.Value&idtask=@task.Idtask&idproject=@task.Idproject">Accept Task</a> *@
+
+
+
+                                            @* <a class="btn" href="/Tasks/Edit/?idproject=@task.Idproject&idtask=@task.Idtask"><img class="p-2" src="~/Graphics/edit.svg" alt="Alternate Text" />Edit</a> *@
+
+                                            @* <a class="btn" asp-controller="Tasks" asp-action="Edit" asp-route-idtask="@task.Idtask"><img class="p-2" src="~/Graphics/edit.svg" alt="Alternate Text" />Edit</a> *@
+
+                                            @* <a class="btn" asp-controller="Tasks" asp-action="Delete" asp-route-idtask="@task.Idtask"><img class="p-2" src="~/Graphics/delete.svg" alt="Alternate Text" />Delete</a> *@
+
+
+
+                                            @{
+                                                var existingAssignment = Model.Assignments.FirstOrDefault(a => a.Idtask == task.Idtask);
+                                            }
+
+
+                                            @if (existingAssignment != null)
+                                            {
+                                                <div>
+                                                    <strong>Người Nhận:</strong>
+                                                    <span>@existingAssignment.IduserNavigation.UserName</span>
+
+
+
+                                                    @if (iduser == existingAssignment.Iduser.ToString())
+                                                    {
+                                                        <a class="acceptTaskBtn btn btn-custom-green border-1 border-custom-dark" asp-controller="DashBoard" asp-action="Unassigned" asp-route-idtask="@task.Idtask" asp-route-iduser="@iduser" asp-route-idproject="@task.Idproject">Unassigned</a>
+                                                    }
+
+                                                </div>
+                                            }
+                                            else
+                                            {
+
+                                                <a class="acceptTaskBtn btn btn-custom-green border-1 border-custom-dark" asp-controller="DashBoard" asp-action="Assigned" asp-route-iduser="@User.FindFirst("UserId")?.Value" asp-route-idtask="@task.Idtask" asp-route-idproject="@task.Idproject">Assigned To Me</a>
+
+                                            }
+
+
+                                        </div>
+                                    </div>
+                                </a>
+                            }
+
+
+                        }
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            }
+        </div>
+
+    </main>
+
+
+    <aside class='task-details'>
+        <div class='tag-progress'>
+            <h2>Task Progress</h2>
+            <div class='tag-progress'>
+                <p>Copywriting <span>3/8</span></p>
+                <progress class="progress progress--copyright" max="8" value="3"> 3 </progress>
+            </div>
+            <div class='tag-progress'>
+                <p>Illustration <span>6/10</span></p>
+                <progress class="progress progress--illustration" max="10" value="6"> 6 </progress>
+            </div>
+            <div class='tag-progress'>
+                <p>UI Design <span>2/7</span></p>
+                <progress class="progress progress--design" max="7" value="2"> 2 </progress>
+            </div>
+        </div>
+        <div class='task-activity'>
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>
+                    <span class='task-icon task-icon--attachment'><i class="fas fa-paperclip"></i></span>
+                    <b>Andrea </b>uploaded 3 documents
+                    <time datetime="2021-11-24T20:00:00">Aug 10</time>
+                </li>
+                <li>
+                    <span class='task-icon task-icon--comment'><i class="fas fa-comment"></i></span>
+                    <b>Karen </b> left a comment
+                    <time datetime="2021-11-24T20:00:00">Aug 10</time>
+                </li>
+                <li>
+                    <span class='task-icon task-icon--edit'><i class="fas fa-pencil-alt"></i></span>
+                    <b>Karen </b>uploaded 3 documents
+                    <time datetime="2021-11-24T20:00:00">Aug 11</time>
+                </li>
+                <li>
+                    <span class='task-icon task-icon--attachment'><i class="fas fa-paperclip"></i></span>
+                    <b>Andrea </b>uploaded 3 documents
+                    <time datetime="2021-11-24T20:00:00">Aug 11</time>
+                </li>
+                <li>
+                    <span class='task-icon task-icon--comment'><i class="fas fa-comment"></i></span>
+                    <b>Karen </b> left a comment
+                    <time datetime="2021-11-24T20:00:00">Aug 12</time>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div>

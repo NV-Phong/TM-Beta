@@ -13,6 +13,8 @@ public partial class User
 
     public string? Password { get; set; }
 
+    public string? Avatar { get; set; }
+
     public int? Hide { get; set; }
 
     public virtual ICollection<Assignment> Assignments { get; set; } = new List<Assignment>();

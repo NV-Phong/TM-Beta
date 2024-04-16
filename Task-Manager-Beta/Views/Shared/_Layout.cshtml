@@ -3,32 +3,34 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Task_Manager_Beta</title>
+    <title>@ViewData["Title"] Task Manager</title>
 
     <link rel="stylesheet" href="~/Style/Style.css" />
     <link rel="stylesheet" href="~/Style/DashBoard.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Style/Custom.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Style/Tab.css" asp-append-version="true" />
+
 </head>
+
 <body>
     <nav class="navbl navbar sticky-top navbar-expand-sm navbar-dark">
         <div class="container-fluid">
             <a href="#">
                 <img src="~/Graphics/logo-home.svg" alt="Alternate Text" />
             </a>
+
+
+
+            <partial name="_LoginPartial" />
+
+
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
-@*                     <li class="navb">
-                        @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
-                    </li>
-                    <li class="navb">
-                        @Html.ActionLink("Sách", "Index", "Sach", new { area = "" }, new { @class = "nav-link" })
-                    </li>
-                    <li class="navb">
-                        @Html.ActionLink("Thể Loại", "Index", "TheLoai", new { area = "" }, new { @class = "nav-link" })
-                    </li> *@
                 </ul>
                 <form class="d-flex" action="@Url.Action("Search")" method="get">
                     <input class="drops form-control me-2 border-3 border-custom-green placeholder-wave bg-gradient" name="query" type="text" placeholder="Search">

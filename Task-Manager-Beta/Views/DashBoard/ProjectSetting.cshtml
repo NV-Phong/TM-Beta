@@ -1,0 +1,73 @@
+﻿@model Task_Manager_Beta.ViewModels.DashBoardViewModel
+
+@{
+    ViewData["Title"] = "Project Setting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="ProjectSetting">
+    <div class="ProjectSettingBody">
+        <div class="containerr">
+            <div class="tab_box">
+                <button class="tab_btn">General</button>
+                <button class="tab_btn">Member</button>
+                <button class="tab_btn">Permission</button>
+                <!-- <div class="line"></div> -->
+            </div>
+            <div class="content_box">
+                <div class="contentt">
+                    <h2>General</h2>
+
+                    @foreach (var project in Model.Projects)
+                    {
+                    
+                        <div class="">
+                            <p><strong>Project Name:</strong>@project.ProjectName</p>
+                            <p><strong>Project Creation Date:</strong>@project.DayCreate</p>
+                            <strong>
+                                <a asp-controller="CRUD" asp-action="DeleteProject" asp-route-idproject="@project.Idproject" style="color:#C50F1F;">
+                                    DELETE PROJECT
+                                </a>
+                            </strong>
+                        </div>
+                    }
+
+                </div>
+                <div class="contentt">
+                    <h2>Member</h2>
+                    <div class="">
+                        Member
+                    </div>
+                </div>
+                <div class="contentt">
+                    <h2>Permission</h2>
+                    <div class="">
+                        Permission
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+    const tabs = document.querySelectorAll('.tab_btn');
+    const all_content = document.querySelectorAll('.contentt');
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(tab => { tab.classList.remove('active') });
+            tab.classList.add('active');
+
+            // var line = document.querySelector('.line');
+            // line.style.width = e.target.offsetWidth + "px";
+            // line.style.left = e.target.offsetLeft + "px";
+
+            all_content.forEach(content => { content.classList.remove('active') });
+            all_content[index].classList.add('active');
+
+        })
+    })
+</script>

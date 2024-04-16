@@ -21,7 +21,7 @@ public partial class Project
 
     public virtual ICollection<Permisssion> Permisssions { get; set; } = new List<Permisssion>();
 
-    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
+    public virtual ICollection<Status> Statuses { get; set; } = new List<Status>();
 
-    public virtual ICollection<Template> Templates { get; set; } = new List<Template>();
+    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
 }

@@ -1,0 +1,36 @@
+﻿@using System.Security.Claims
+
+<ul class="navbar-nav" style="display:flex; align-items:center">
+    @if (User.Identity.IsAuthenticated)
+    {
+        string username = User.Identity.Name;
+        string permission = User.FindFirst(ClaimTypes.Role)?.Value;
+
+
+        <li>
+            <a class="btn text-decoration-none" style="color:white">
+                <img src="~/Graphics/Avt.png" width="24px" alt="Alternate Text" />
+                @username
+            </a>
+        </li>
+        <li>
+            <a asp-controller="User" asp-action="Logout" class="btnpd btn btn-custom-green border-1 border-custom-dark">
+                <form asp-controller="User" asp-action="Logout" method="post">
+                    <button type="submit" class="text-decoration-none btnl">Logout</button>
+                </form>
+            </a>
+        </li>
+    }
+@*     else
+    {
+        <div class="loginn">
+            <li>
+                <a href="/dang-ky" class="btnpd btn hv drops btn btn-custom-green" id="register">Đăng Ký</a>
+            </li>
+            <li>
+                <a href="/dang-nhap" class="btnpd btn hv drops btn btn-custom-green" id="Login">Đăng Nhập</a>
+            </li>
+        </div>
+    } *@
+
+</ul>
