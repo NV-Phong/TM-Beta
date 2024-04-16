@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\hoc\\svnam4\\main_taskmanager\\task-manager-beta\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\hoc\\svnam4\\main_taskmanager\\task-manager-beta\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\hoc\\svnam4\\main_taskmanager\\task-manager-beta\\views\\projects\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:views\\projects\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\hoc\\svnam4\\main_taskmanager\\task-manager-beta\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|solutionrelative:views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{779C3952-BF29-4EE8-903E-45C806417E49}|Task-Manager-Beta.csproj|d:\\hoc\\svnam4\\main_taskmanager\\task-manager-beta\\data\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,15 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Assignment.cs",
               "DocumentMoniker": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Data\\Assignment.cs",
               "RelativeDocumentMoniker": "Data\\Assignment.cs",
@@ -142,18 +138,17 @@
               "RelativeToolTip": "Data\\Assignment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:25:14.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T09:25:14.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Calendar.cshtml",
               "DocumentMoniker": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Views\\Calendar\\Calendar.cshtml",
               "RelativeDocumentMoniker": "Views\\Calendar\\Calendar.cshtml",
               "ToolTip": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Views\\Calendar\\Calendar.cshtml",
               "RelativeToolTip": "Views\\Calendar\\Calendar.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-15T08:00:40.967Z",
               "EditorCaption": ""
@@ -166,7 +161,7 @@
               "RelativeDocumentMoniker": "Controllers\\CalendarController.cs",
               "ToolTip": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Controllers\\CalendarController.cs",
               "RelativeToolTip": "Controllers\\CalendarController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAkwDIAAAAFAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T06:58:15.438Z",
               "EditorCaption": ""
@@ -181,8 +176,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAACsAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T12:19:09.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:19:09.645Z"
             },
             {
               "$type": "Document",
@@ -194,12 +188,11 @@
               "RelativeToolTip": "Controllers\\ProjectsController.cs",
               "ViewState": "AQIAACcBAAAAAAAAAAA2wM4AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:35:41.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:35:41.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TasksController.cs",
               "DocumentMoniker": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
@@ -207,8 +200,7 @@
               "RelativeToolTip": "Controllers\\TasksController.cs",
               "ViewState": "AQIAAG4AAAAAAAAAAAAkwCwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:35:02.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:35:02.997Z"
             },
             {
               "$type": "Document",
@@ -220,12 +212,11 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwEUAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:35:38.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:35:38.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DashBoard.cshtml",
               "DocumentMoniker": "D:\\hoc\\SVNam4\\Main_taskManager\\Task-Manager-Beta\\Views\\Projects\\DashBoard.cshtml",
               "RelativeDocumentMoniker": "Views\\Projects\\DashBoard.cshtml",
@@ -233,8 +224,7 @@
               "RelativeToolTip": "Views\\Projects\\DashBoard.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T13:08:06.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:08:06.139Z"
             },
             {
               "$type": "Document",
@@ -246,8 +236,7 @@
               "RelativeToolTip": "Data\\Event.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T06:57:44.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T06:57:44.544Z"
             },
             {
               "$type": "Document",
@@ -259,8 +248,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:31:57.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:31:57.152Z"
             },
             {
               "$type": "Document",
@@ -272,8 +260,7 @@
               "RelativeToolTip": "Views\\Projects\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T07:17:09.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T07:17:09.99Z"
             },
             {
               "$type": "Document",
@@ -285,8 +272,7 @@
               "RelativeToolTip": "Views\\Tasks\\TimeLine.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T03:12:07.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T03:12:07.439Z"
             },
             {
               "$type": "Document",
@@ -298,8 +284,7 @@
               "RelativeToolTip": "wwwroot\\Scripts\\DashBoard.js",
               "ViewState": "AQIAADwAAAAAAAAAAAAWwD0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-09T15:50:34.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T15:50:34.367Z"
             },
             {
               "$type": "Document",
@@ -311,8 +296,7 @@
               "RelativeToolTip": "wwwroot\\Scripts\\jquery-3.4.1.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-14T06:21:30.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:21:30.989Z"
             },
             {
               "$type": "Document",
@@ -324,8 +308,7 @@
               "RelativeToolTip": "ViewModels\\ProjectViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:01:24.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:01:24.82Z"
             },
             {
               "$type": "Document",
@@ -337,8 +320,7 @@
               "RelativeToolTip": "Views\\Projects\\Index.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T12:23:39.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:23:39.738Z"
             },
             {
               "$type": "Document",
@@ -350,8 +332,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwA0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:40:32.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:40:32.428Z"
             },
             {
               "$type": "Document",
@@ -363,8 +344,7 @@
               "RelativeToolTip": "Views\\Projects\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T06:36:22.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T06:36:22.208Z"
             },
             {
               "$type": "Document",
@@ -376,8 +356,7 @@
               "RelativeToolTip": "Views\\User\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAACBjwAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T12:07:34.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:07:34.956Z"
             },
             {
               "$type": "Document",
@@ -389,8 +368,7 @@
               "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAIBZwBsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T12:07:47.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:07:47.174Z"
             },
             {
               "$type": "Document",
@@ -402,8 +380,7 @@
               "RelativeToolTip": "Data\\Member.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAIwA8AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:27:55.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T05:27:55.964Z"
             },
             {
               "$type": "Document",
@@ -415,8 +392,7 @@
               "RelativeToolTip": "Views\\Tasks\\Create.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAACBjwBgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T13:08:31.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:08:31.379Z"
             },
             {
               "$type": "Document",
@@ -428,8 +404,7 @@
               "RelativeToolTip": "ViewModels\\MemberViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:36:40.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:36:40.997Z"
             },
             {
               "$type": "Document",
@@ -441,8 +416,7 @@
               "RelativeToolTip": "Data\\Template.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:14:23.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:14:23.192Z"
             },
             {
               "$type": "Document",
@@ -454,8 +428,7 @@
               "RelativeToolTip": "ViewModels\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:18:52.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:18:52.979Z"
             },
             {
               "$type": "Document",
@@ -467,8 +440,7 @@
               "RelativeToolTip": "Models\\TaskManagerContext.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAmwCoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:47:49.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:47:49.576Z"
             },
             {
               "$type": "Document",
@@ -480,8 +452,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-07T12:43:32.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:43:32.907Z"
             },
             {
               "$type": "Document",
@@ -493,8 +464,7 @@
               "RelativeToolTip": "wwwroot\\Style\\Custom.css",
               "ViewState": "AQIAAB4AAAAAAAAAACBjwDkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-07T12:09:14.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:09:14.642Z"
             },
             {
               "$type": "Document",
@@ -506,8 +476,7 @@
               "RelativeToolTip": "Views\\User\\Register.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwDYAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T12:08:15.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:08:15.778Z"
             }
           ]
         }
